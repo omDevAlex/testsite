@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UNSTOP.GG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">    
+</head>
+<body>
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+	<div class="wrap">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <div class="logo_img"></div>
+                    <div class="logo_name">UN<span>STOP</span>.GG</div>
+                </div>
+                <div class="menu">
+                    <div class="menu_open"><span>Меню</span></div>
+                    <div class="menu_mobile">
+                        <div class="logo">
+                            <div class="logo_img"></div>
+                            <div class="logo_name">UN<span>STOP</span>.GG</div>
+                        </div>
+                        <div class="menu_close"></div>
+                        <nav>
+                            <ul>
+                                <li><a class="main" href="#">Главная</a></li>
+                                <li><a class="news" href="#">Новости</a></li>
+                                <li><a class="turnir" href="#">Турниры</a></li>
+                                <li><a class="ligi" href="#">Лиги</a></li>
+                                <li><a class="rating" href="#">Рейтинг</a></li>
+                                <li><a class="about" href="#">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="tools">                        
+                        <div class="lang">
+                            <ul class="lang_choice">
+                                <li class="lang_active">
+                                    <a href="#">
+                                        <img class="lang_openlist" src="images/ru-lang.png" alt="ru">
+                                    </a>                                
+                                    <ul class="lang_sublist">
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/en-lang.png" alt="en">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/es-lang.png" alt="en">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="theme_form">
+                                <input id="dark-mode" class="toggle" type="checkbox"> <!-- name="Dark mode" role="switch" value="on"-->
+                                <label for="dark-mode"></label>
+                            </form>
+                        </div>                       
+                        <div class="chat">
+                            <div class="chat_icon"></div>
+                            <div class="chat_masseges">
+                                У вас нет сообщений...
+                            </div>
+                        </div>
+                        <div class="notif">
+                            <div class="notif_icon"></div>
+                            <span class="notif_count">1</span>
+                            <div class="notif_masseges">
+                                <ul>
+                                    <li><a href="#">Начало турнира</a></li>
+                                    <li><a href="#">Новость 2</a></li>
+                                    <li><a href="#">Новость 3</a></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+                <div class="login">
+                    <div data-modal class="login_icon"></div>                    
+                </div>
+            </div>
+        </header>
+    </div>
+    <footer>
+        
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div data-close class="modal__close">&times;</div>
+                <div class="tabcontainer">
+                    <div class="tabheader">
+                        <div class="tabheader__items">
+                            <div class="tabheader__item tabheader__item_active">Вход</div>
+                            <div class="tabheader__item">Регистрация</div>
+                        </div>
+                    </div>
+                    <div class="tabcontent tabshow">
+                        <form action="#">                                            
+                            <input required placeholder="Никнейм" name="name" type="text">
+                            <input required placeholder="Пароль" name="password" type="password">
+                            <button class="purple-button">Войти</button>
+                        </form>
+                    </div>
+                    <div class="tabcontent">
+                        <form action="#">
+                            <input required placeholder="Имя" name="name" type="text">
+                            <input required placeholder="Никнейм" name="name" type="text">
+                            <input required placeholder="Пароль" name="password" type="password">
+                            <input required placeholder="Подтвердите пароль" name="password" type="password">
+                            <button class="purple-button">Зарегистрироватся</button>
+                        </form>
+                    </div>                                    
+                </div>                                
+            </div>
+        </div>
+    </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
