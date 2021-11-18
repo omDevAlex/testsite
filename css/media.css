@@ -334,7 +334,10 @@
 	.page_asside_ad_block.ad {
 		margin-top: 20px;
 		margin-bottom: 20px;
-	} 
+	}
+	.future_turnir_h_all_mob-none, .active_turnir_h_all_mob-none {
+		display: none;
+	}
 }
 
 /* === MOBILE FIRST === */
