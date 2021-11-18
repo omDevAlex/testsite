@@ -26,8 +26,11 @@
 
 /* xl <= Extra extra large (xxl) */
 
-@media (max-width : 1400px) {
-	
+
+@media (min-width : 1150px) {
+	.page_asside_ad_block.ad {
+		margin-top: 44px;
+	}
 }
 
 /* lg <= Extra large (xl) */
@@ -96,6 +99,10 @@
 	footer .logo:after {
 		display: none;
 	}
+
+	.page_asside_ad.rat a {
+		margin-top: 0;
+	}
 }
 
 @media (max-width : 1150px) {
@@ -137,8 +144,21 @@
 	.video_section {
 		height: 540px;
 	}
+	
 }
-
+@media (min-width: 665px) and (max-width: 1150px) {
+	.page_asside_ad.rat {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+		margin-left: 0;
+		margin-top: 50px;
+	}
+	.page_asside_ad.rat div {
+		width: 49.5%;
+	}
+}
 @media (min-width: 878px) and (max-width: 1200px) {
 	.footer_info .pol {
 		position: absolute;
@@ -224,7 +244,7 @@
 	.active_turnir_list_item_bottom {
 		flex-wrap: wrap;
 	}
-	.active_turnir_list_item_players, .active_turnir_list_item_date, .active_turnir_list_item_check, .active_turnir_list_item_more {
+	.active_turnir_list_item_players, .active_turnir_list_item_date, .active_turnir_list_item_chek, .active_turnir_list_item_more {
 		width: 50%;
 	}
 	.active_turnir_list_item_date {
@@ -235,6 +255,9 @@
 	}
 	.video_section {
 		height: 248px;
+	}
+	.active_turnir_list_item:hover {
+		height: 197px;
 	}
 }
 @media (max-width : 665px) {
@@ -301,6 +324,9 @@
 	}
 	.active_turnir_list_item_chek {
 		margin-bottom: 15px;
+	}
+	.active_turnir_list_item:hover {
+		height: 273px;
 	}
 }
 @media (max-width : 455px) {

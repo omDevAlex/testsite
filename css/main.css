@@ -36,6 +36,7 @@ body {
     --icon-arrow: url(../images/icon-arrow.png);
     --icon-cs: url(../images/icon-cs.png);
     --icon-dota: url(../images/icon-dota.png);
+    --icon-game: url(../images/icon-game.png);
 
     --bg-img-left: url(../images/bg-left.png);
     --bg-img-right: url(../images/bg-right.png);
@@ -67,12 +68,12 @@ body.dark {
     --icon-fb: url(../images/icon-fb-dark.png);
     --icon-arrow: url(../images/icon-arrow-dark.png);
     --icon-cs: url(../images/icon-cs-dark.png);
-
     --icon-news-page: url(../images/icon-news-page-dark.png);
     --icon-turnir-page: url(../images/icon-turnir-page-dark.png);
     --icon-turnir-page-active: url(../images/icon-turnir-page-active-dark.png);
     --icon-tv: url(../images/icon-tv-dark.png);
     --icon-rait-page: url(../images/icon-rait-page-dark.png);
+    --icon-game: url(../images/icon-game-dark.png);
 
     --bg-img-left: url(../images/bg-left-dark.png);
     --bg-img-right: url(../images/bg-right-dark.png);
@@ -768,11 +769,12 @@ footer .social {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 .tabcontainer_raiting {
     width: 100%;
     margin: 0 auto;
 }
-
 .tabcontent_raiting {
     width: 850px;
     position: relative;
@@ -802,7 +804,6 @@ footer .social {
     color: var(--text);
     opacity: inherit;
 }
-
 .tabcontent_raiting a {
     width: 270px;
     height: 44px;
@@ -1179,7 +1180,7 @@ footer .social {
     padding-left: 15px;
 }
 .active_turnir_list_item:hover {
-    height: auto;
+    height: 160px;
     transition: 0.4s;
 }
 .active_turnir_list_item_top {
@@ -1277,4 +1278,96 @@ footer .social {
 }
 .video_section {
     height: 494px;
+}
+
+
+.page_main_rat_game_h_icon {
+    font-size: 19px;
+    position: relative;
+    padding-left: 35px;
+}
+.page_main_rat_game_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 26px;
+    height: 20px;
+    background-image: var(--icon-game);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page_main_rat_h_icon {
+    font-size: 19px;
+    position: relative;
+    padding-left: 35px;
+}
+.page_main_rat_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 27px;
+    height: 20px;
+    background-image: var(--icon-rait-page);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page_main_rat_game_tab .tabheader_raiting__item {
+    width: 32%;
+    height: 87px;
+    text-align: center;
+    padding: 25px 0;
+    color: #fff;
+    font-size: 24px;
+}
+.tabheader_raiting__item.tab_cs{
+    background-image: url(../images/img-tab-cs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tabheader_raiting__item.tab_dota{
+    background-image: url(../images/img-tab-dota.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tabheader_raiting__item.tab-fifa{
+    background-image: url(../images/img-tab-fifa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page_main_rat_game_tab .tabheader_raiting__item_active {    
+    box-shadow: 0px 0px 26px -5px rgb(86 0 255 / 93%);
+}
+.page_main_rat_game_h {
+    margin-bottom: 7px;
+}
+.page_main_rat_game_tab .tabheader_raiting {
+    border-bottom: none;
+}
+.page_main_rat_h {
+    margin-top: 20px;
+}
+.page_main_rat_game_tab .raiting_item {
+    padding: 13px 15px 13px 45px;
+    background: var(--smoll-blok-bg);
+    margin: 10px 0 0 0;
+}
+.page_main_rat_game_tab .raiting_place {
+    left: 15px;
+}
+.page_main_rat_game_tab .raiting_place {
+    top: 21px;
+}
+.rat_first {
+    border-top: solid 1px #FFD964;
+}
+.rat_second {
+    border-top: solid 1px #B8B8B8;
+}
+.rat_third{
+    border-top: solid 1px #734C00;
 }
