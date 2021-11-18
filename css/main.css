@@ -79,7 +79,7 @@ body.dark {
     --bg-img-right: url(../images/bg-right-dark.png);
 }
 
-/* FONTS */
+/* fonts */
 
 @font-face { src: url("../fonts/Jost-Regular.woff2") format("woff2"); font-family: "jost-reg"; font-weight: 400; font-style: normal; }
 @font-face { src: url("../fonts/Jost-Medium.woff2") format("woff2"); font-family: "jost-med"; font-weight: 500; font-style: normal; }
