@@ -6,7 +6,10 @@ body {
 	--bg-color: #FFFFFF;
     --bg-secondry: #F1F1F1;
     --line-color: #E4E4E4;
-    --input-border: 1px solid #B6B6B6;
+    --input-border: 1px solid #B6B6B6; 
+    --rait_shadow: 235, 235, 235;
+    --smoll-blok-bg: linear-gradient(180deg, #F1F1F1 0%, rgba(241, 241, 241, 0) 100%);
+    /* #ebebeb */
 
 
 
@@ -22,6 +25,17 @@ body {
     --icon-login: url(../images/icon-login.svg);
     --icon-menu: url(../images/icon-menu.svg);
     --icon-menu-close: url(../images/icon-close-menu.svg);
+    --icon-vk: url(../images/icon-vk.png);
+    --icon-fb: url(../images/icon-fb.png);
+    --icon-news-page: url(../images/icon-news-page.png);
+    --icon-turnir-page: url(../images/icon-turnir-page.png);
+    --icon-turnir-page-active: url(../images/icon-turnir-page-active.png);
+    --icon-tv: url(../images/icon-tv.png);
+    --icon-rait-page: url(../images/icon-rait-page.png);
+    --icon-eye: url(../images/icon-eye.png);
+    --icon-arrow: url(../images/icon-arrow.png);
+    --icon-cs: url(../images/icon-cs.png);
+    --icon-dota: url(../images/icon-dota.png);
 
     --bg-img-left: url(../images/bg-left.png);
     --bg-img-right: url(../images/bg-right.png);
@@ -34,6 +48,8 @@ body.dark {
     --bg-secondry: #1C1A25;
     --line-color: #2D2A3C;
     --input-border: 1px solid rgba(255, 255, 255, 0.25);
+    --rait_shadow: 28, 26, 37;
+    --smoll-blok-bg: linear-gradient(180deg, #2D2A3C 0%, rgba(45, 42, 60, 0) 100%);;
 
     --logo-img: url(../images/icon-logo-dark.svg);
     --main-menu-icon: url(../images/icon-main-dark.png);
@@ -47,6 +63,16 @@ body.dark {
     --icon-login: url(../images/icon-login-dark.svg);
     --icon-menu: url(../images/icon-menu-dark.svg);
     --icon-menu-close: url(../images/icon-close-menu-dark.svg);
+    --icon-vk: url(../images/icon-vk-dark.png);
+    --icon-fb: url(../images/icon-fb-dark.png);
+    --icon-arrow: url(../images/icon-arrow-dark.png);
+    --icon-cs: url(../images/icon-cs-dark.png);
+
+    --icon-news-page: url(../images/icon-news-page-dark.png);
+    --icon-turnir-page: url(../images/icon-turnir-page-dark.png);
+    --icon-turnir-page-active: url(../images/icon-turnir-page-active-dark.png);
+    --icon-tv: url(../images/icon-tv-dark.png);
+    --icon-rait-page: url(../images/icon-rait-page-dark.png);
 
     --bg-img-left: url(../images/bg-left-dark.png);
     --bg-img-right: url(../images/bg-right-dark.png);
@@ -105,13 +131,18 @@ header {
 
 .container {
     position: relative;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
-    padding: 0 15px;
+    padding: 0 15px;    
+}
+.container_header {
     display: flex;
     align-items: center;
+    width: 1200px;
 }
-
+.container_page {
+    padding: 30px 15px;
+}
 .logo {
     position: relative;
 }
@@ -130,7 +161,7 @@ header {
     content: '';
     position: absolute;
     right: 0;
-    top: -2px;
+    top: 1px;
     width: 1px;
     height: 32px;
     background-color: var(--line-color);
@@ -330,6 +361,7 @@ nav .about:before {
 
 .show_list {
     visibility: visible;
+    z-index: 111;
 }
 
 .theme_form {
@@ -506,6 +538,7 @@ nav .about:before {
 
 .chat .show_masseges, .notif .show_masseges {
     visibility: inherit;
+    z-index: 111;
 }
 
 .login {
@@ -634,4 +667,614 @@ nav .about:before {
 footer {
     height: 225px;
     margin-top: -225px;
-  }
+    padding: 40px 0;
+}
+.footer_container {
+    max-width: 1200px;
+    width: 100%;
+}
+footer nav {
+    display: inline-block;
+}
+footer nav:after {
+    display: none;
+}
+footer .social {
+    position: absolute;
+    right: 15px;
+    top: 22px;
+}
+.footer_main {
+    padding: 25px 0;
+    border-top: solid 1px var(--line-color);
+    border-bottom: solid 1px var(--line-color);
+}
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+.footer_info a {
+    text-decoration: none;
+    color: var(--text);
+}
+.social_vk, .social_fb {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.social_vk:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: var(--icon-vk);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social_fb:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: var(--icon-fb);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+}
+.page_main {
+    width: 73%;
+    padding-right: 15px;
+}
+.page_asside {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    padding-left: 15px;
+}
+.page_asside_raiting {
+    padding: 20px 15px;
+    background-color: var(--bg-secondry);
+    position: relative;
+    overflow: hidden;
+    max-height: 450px;
+}
+.page_asside_raiting_h {
+    position: relative;
+    font-size: 19px;
+    padding-left: 35px;
+    border-bottom: solid 1px var(--line-color);
+    padding-bottom: 10px;
+}
+.page_asside_raiting_h:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 27px;
+    height: 20px;
+    background-image: var(--icon-rait-page);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tabcontainer_raiting {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabcontent_raiting {
+    width: 850px;
+    position: relative;
+    display: none;
+}
+.tabshow_raiting {
+    display: contents;
+    animation-name:plavno;
+    animation-duration:1.3s;
+}
+.tabheader_raiting {
+    width: 100%;
+    padding: 10px 0 9px;
+    border-bottom: 1px solid var(--line-color);
+}
+.tabheader_raiting__items {
+    display: flex;
+    justify-content: space-between;
+}
+.tabheader_raiting__item {
+    cursor:pointer;
+    color: var(--text);
+    font-size: 18px;
+    opacity: 0.5;
+}
+.tabheader_raiting__item_active {
+    color: var(--text);
+    opacity: inherit;
+}
+
+.tabcontent_raiting a {
+    width: 270px;
+    height: 44px;
+    background: linear-gradient(48.14deg, #2A0463 0.31%, #5600FF 100%), #C4C4C4;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "jost-med";
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 9px 0;
+    margin: auto;
+    box-shadow: 0px 0px 26px -5px rgba(	86, 0, 255, 0.93);
+}
+.bg_a_raiting {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0 20px;
+    background: rgba(var(--rait_shadow), 0.95);
+    box-shadow: 0px 0px 41px 37px rgba(var(--rait_shadow), 1);
+}
+.raiting_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35px;
+    margin: 15px 0 21px;
+}
+.raiting_user {
+    display: flex;
+    align-items: center;
+}
+.raiting_user span {
+    padding-left: 10px;
+}
+.raiting_place {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+.page_asside_ad_block {
+    width: 100%;
+    display: block;
+}
+.page_asside_ad_block.ad {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/add-block-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page_asside_ad_block {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/add-block-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page_main_news {
+    margin-top: 20px;
+}
+.page_main_news_h {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+.page_main_news_h_all {
+    text-decoration: none;
+    color: var(--text);
+}
+.page_main_news_h_all, .page_main_news_h_icon {
+    position: relative;
+}
+.page_main_news_h_icon {
+    padding-left: 29px;
+}
+.page_main_news_h_all {
+    padding-right: 15px;
+}
+.page_main_news_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 21px;
+    height: 20px;
+    background-image: var(--icon-news-page);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page_main_news_h_all:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 7px;
+    height: 12px;
+    background-image: var(--icon-arrow);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page_main_news_items {
+    display: flex;
+    justify-content: space-between;
+    min-height: 389px;
+    margin: 15px 0;
+}
+.page_main_news_item {
+    width: 32%;
+}
+.page_main_news_items_block {
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.page_main_news_item_in_b {
+    position: relative;
+    width: 48.5%;
+    height: 48%;
+}
+.page_main_news_item_content_h {
+    position: absolute;
+    width: 100%;
+    line-height: 18px;
+    padding: 35px 12px;
+    bottom: 0;
+    color: #fff;
+    background: linear-gradient(0deg, #2D2A3C 0%, rgba(45, 42, 60, 0.66) 65%, rgba(45, 42, 60, 0) 100%);
+}
+.news1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img-news-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img-news-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news3 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img-news-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news4 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img-news-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news5 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img-news-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page_main_news_item_content {
+    height: 100%;
+    position: relative;
+
+}
+.page_main_news_item_content_tag-view {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    font-family: "jost-reg", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+}
+.page_main_news_item_content_view {
+    position: relative;
+}
+.page_main_news_item_content_view:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 1px;
+    width: 15px;
+    height: 10px;
+    background-image: var(--icon-eye);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page_main_news_item_content_date {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(45, 42, 60, 0.6);
+    padding: 6px 9px;
+    font-family: "jost-reg", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+}
+.future_turnir {
+    margin-top: 32px;
+}
+.future_turnir_h {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.future_turnir_h_all {
+    text-decoration: none;
+    color: var(--text);
+}
+.future_turnir_h_icon, .future_turnir_h_all {
+    position: relative;
+}
+.future_turnir_h_icon {
+    padding-left: 29px;
+}
+.future_turnir_h_all {
+    padding-right: 15px;
+}
+.future_turnir_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 25px;
+    height: 20px;
+    background-image: var(--icon-turnir-page);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.future_turnir_h_all:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 7px;
+    height: 12px;
+    background-image: var(--icon-arrow);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.future_turnir_list_item {
+    border-bottom: 1px solid var(--line-color);
+}
+.future_turnir_list_item a {
+    display: flex;
+    color: var(--text);
+    text-decoration: none;
+}
+.future_turnir_list_cs .future_turnir_list_item_img {
+    width: 106px;
+    height: 80px;
+    margin-right: 20px;
+    background: url(../images/img-cs.png) center center no-repeat;
+}
+.future_turnir_list_dota .future_turnir_list_item_img {
+    width: 106px;
+    height: 80px;
+    margin-right: 20px;
+    background: url(../images/img-dota.png) center center no-repeat;
+}
+.future_turnir_list_item_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 60px;
+    line-height: 16px;
+    align-items: center;
+    position: relative;
+}
+.future_turnir_list_cs .future_turnir_list_item_info:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 23px;
+    height: 30px;
+    background-image: var(--icon-cs);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.future_turnir_list_dota .future_turnir_list_item_info:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 30px;
+    height: 30px;
+    background-image: var(--icon-dota);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active_turnir {
+    margin-top: 32px;
+}
+.active_turnir_h {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.active_turnir_h_all {
+    text-decoration: none;
+    color: var(--text);
+}
+.active_turnir_h_icon, .active_turnir_h_all {
+    position: relative;
+}
+.active_turnir_h_icon {
+    padding-left: 29px;
+}
+.active_turnir_h_all {
+    padding-right: 15px;
+}
+.active_turnir_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 25px;
+    height: 20px;
+    background-image: var(--icon-turnir-page-active);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active_turnir_h_all:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 7px;
+    height: 12px;
+    background-image: var(--icon-arrow);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active_turnir_list_item {
+    background: var(--smoll-blok-bg);
+    margin-top: 5px;
+    height: 80px;
+    overflow: hidden;
+    transition: 0.4s;
+    padding-left: 15px;
+}
+.active_turnir_list_item:hover {
+    height: auto;
+    transition: 0.4s;
+}
+.active_turnir_list_item_top {
+    display: flex;
+    color: var(--text);
+    text-decoration: none;
+}
+.active_turnir_list_item_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 111px;
+    margin-right: 15px;
+    padding: 17px 0;
+    border-top: solid 1px var(--line-color);
+}
+.active_turnir_list_item_bottom span {
+    font-family: "jost-reg", sans-serif;
+}
+.active_turnir_list_item_bottom a {
+    width: 180px;
+    height: 44px;
+    background: linear-gradient(48.14deg, #2A0463 0.31%, #5600FF 100%), #C4C4C4;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "jost-med";
+    text-decoration: none;
+    /* display: block; */
+    text-align: center;
+    padding: 9px 0;
+    box-shadow: 0px 0px 26px -5px rgba(	86, 0, 255, 0.93);
+}
+.active_turnir_list_cs .active_turnir_list_item_img {
+    width: 106px;
+    height: 80px;
+    margin-right: 20px;
+    background: url(../images/img-cs.png) center center no-repeat;
+}
+.active_turnir_list_dota .active_turnir_list_item_img {
+    width: 106px;
+    height: 80px;
+    margin-right: 20px;
+    background: url(../images/img-dota.png) center center no-repeat;
+}
+.active_turnir_list_item_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 60px;
+    line-height: 16px;
+    align-items: center;
+    position: relative;
+}
+.active_turnir_list_cs .active_turnir_list_item_info:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 23px;
+    height: 30px;
+    background-image: var(--icon-cs);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active_turnir_list_dota .active_turnir_list_item_info:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 30px;
+    height: 30px;
+    background-image: var(--icon-dota);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video_h {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.video_h_icon {
+    padding-left: 30px;
+    font-size: 19px;
+    position: relative;
+}
+.video_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 22px;
+    height: 20px;
+    background-image: var(--icon-tv);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.video_section {
+    height: 494px;
+}

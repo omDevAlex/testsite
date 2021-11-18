@@ -25,21 +25,21 @@ window.addEventListener('DOMContentLoaded', () => {
   // tabs
 
   const tabsParent = document.querySelector('.tabheader__items'),
-  tabs = document.querySelectorAll('.tabheader__item'),
-  tabsContent = document.querySelectorAll('.tabcontent');
+        tabs = document.querySelectorAll('.tabheader__item'),
+        tabsContent = document.querySelectorAll('.tabcontent');
 
   function hideTab() {
-  tabsContent.forEach(item => {
-      item.classList.remove('tabshow');
-  });
-  tabs.forEach(item => {
-      item.classList.remove('tabheader__item_active');
-  });
+    tabsContent.forEach(item => {
+        item.classList.remove('tabshow');
+    });
+    tabs.forEach(item => {
+        item.classList.remove('tabheader__item_active');
+    });
   }
 
   function showTab(i) {
-  tabsContent[i].classList.add('tabshow');
-  tabs[i].classList.add('tabheader__item_active');
+    tabsContent[i].classList.add('tabshow');
+    tabs[i].classList.add('tabheader__item_active');
   }
 
   tabsParent.addEventListener('click', (e) => {
@@ -50,6 +50,39 @@ window.addEventListener('DOMContentLoaded', () => {
           if (target == item) {
               hideTab();
               showTab(i);
+          }
+      });
+  }
+  });
+
+  //rait tabs
+
+  const tabsParentRait = document.querySelector('.tabheader_raiting__items'),
+        tabsRait = document.querySelectorAll('.tabheader_raiting__item'),
+        tabsContentRait = document.querySelectorAll('.tabcontent_raiting');
+
+  function hideTabRait() {
+    tabsContentRait.forEach(item => {
+        item.classList.remove('tabshow_raiting');
+    });
+    tabsRait.forEach(item => {
+        item.classList.remove('tabheader_raiting__item_active');
+    });
+  }
+
+  function showTabRait(i) {
+    tabsContentRait[i].classList.add('tabshow_raiting');
+    tabsRait[i].classList.add('tabheader_raiting__item_active');
+  }
+
+  tabsParentRait.addEventListener('click', (e) => {
+  const target = e.target;
+
+  if (target && target.classList.contains('tabheader_raiting__item')) {
+      tabsRait.forEach((item, i) => {
+          if (target == item) {
+              hideTabRait();
+              showTabRait(i);
           }
       });
   }
@@ -123,15 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   openMenu.addEventListener('click', mobiMenu);
-  openMenu.addEventListener('click', tools);
   
   closeMenu.addEventListener('click', mobiMenu);
-  closeMenu.addEventListener('click', tools);
-
-  document.addEventListener('click', (e) => {
-    if ( e.target.className != 'menu_open' && e.target.className != 'menu_close' && e.target.className != 'menu_mobile' && openNotif.classList.contains('show_menu') ) {
-      mobiMenu();
-    }
-});
 
 });
