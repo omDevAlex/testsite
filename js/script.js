@@ -3,8 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // modal
 
   const modal = document.querySelector('.modal'),
-          modalOpen = document.querySelectorAll('[data-modal]'),
-          modalClose = document.querySelector('[data-close]');
+        modalOpen = document.querySelectorAll('[data-modal]'),
+        modalClose = document.querySelector('[data-close]');
 
     function toggleModal() {
         modal.classList.toggle('show');      
@@ -158,5 +158,74 @@ window.addEventListener('DOMContentLoaded', () => {
   openMenu.addEventListener('click', mobiMenu);
   
   closeMenu.addEventListener('click', mobiMenu);
+
+
+  // filter
+
+  const filterList = document.querySelector('.page_main_list_news_filter'),
+        filterItems = document.querySelectorAll('.news_block'),
+        listItems = document.querySelectorAll('.filter_item');
+
+  function filter() {
+    filterList.addEventListener('click', e => {
+      const targetId = e.target.dataset.id;
+      const target = e.target;
+
+      if (target.classList.contains('filter_item')) {
+        listItems.forEach(listItem => listItem.classList.remove('filter_active'));
+        target.classList.add('filter_active');
+      }
+
+      switch(targetId) {
+        case 'all':
+          getItems('news_block');
+          break;
+        case 'popular':
+          getItems(targetId);
+          break;
+        case 'newest':
+          getItems(targetId);
+          break;
+      }
+    });
+  }
+
+  filter();
+
+  function getItems(className) {
+    filterItems.forEach(item =>{
+      if (item.classList.contains(className)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // <div class="page_main_list_news_filter list">
+  //   <div class="filter_item filter_active" list_item>Все</div>
+  //   <div class="filter_item">Популярные</div>
+  //   <div class="filter_item">Свежие</div>
+  // </div>
+  // <div class="page_main_list_news_blocks">
+  //   <div class="news_block most_popular blocks_item">
+
+  //   </div>
+  //   <div class="news_block most_newest">
+
+  //   </div>
+  //   <div class="news_block most_popular">
+
+  //   </div>
+  //   <div class="news_block most_newest">
+
+  //   </div>
+  //   <div class="news_block most_popular">
+
+  //   </div>
+  //   <div class="news_block most_newest">
+
+  //   </div>
+  // </div>
 
 });

@@ -259,6 +259,15 @@
 	.active_turnir_list_item:hover {
 		height: 197px;
 	}
+	.page_asside {
+		margin-top: 40px;
+	}
+	.news_block img {
+		display: none;
+	}
+	.news_block_main p {
+		margin-bottom: 15px;
+	}
 }
 @media (max-width : 665px) {
 	.page_asside {
@@ -276,6 +285,9 @@
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+	.page_asside_ad.rat {
+		margin-top: 35px;
+	} 
 }
 /* xs <= Small (sm) */
 @media (max-width : 612px) {
@@ -328,6 +340,34 @@
 	.active_turnir_list_item:hover {
 		height: 273px;
 	}
+	.news_block img {
+		display: block;
+		width: 100%;
+	}
+	.news_block {
+		flex-direction: column;
+	}
+}
+
+@media (max-width : 500px) {
+	.news_block_main_dop {
+		flex-direction: column;
+		align-items: center;
+	}
+	.news_block_main_dop a {
+		margin-top: 15px;
+	}
+}
+@media (max-width : 476px) {
+	.page_main_rat_game_tab .tabheader_raiting__items {
+		flex-direction: column;
+	}
+	.page_main_rat_game_tab .tabheader_raiting__item {
+		width: 100%;
+	}
+	.page_main_rat_game_tab .tab_dota, .page_main_rat_game_tab .tab-fifa {
+		margin-top: 15px;
+	} 
 }
 @media (max-width : 455px) {
 	.page_main_news_items {
