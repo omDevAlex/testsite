@@ -22,6 +22,26 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+  const modalNews = document.querySelector('.modal_news'),
+        modalOpenNews = document.querySelectorAll('[data-modal-news]'),
+        modalCloseNews = document.querySelector('[data-close-news]');
+
+    function toggleModalNews() {
+        modalNews.classList.toggle('show');      
+    }
+    
+    modalOpenNews.forEach(btn => {
+        btn.addEventListener('click', toggleModalNews);
+    });
+
+    modalCloseNews.addEventListener('click', toggleModalNews);
+
+    modalNews.addEventListener('click', (e) => {
+        if (e.target === modalNews) {
+            toggleModalNews();
+        }
+    });
+         
   // tabs
 
   const tabsParent = document.querySelector('.tabheader__items'),
@@ -92,11 +112,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const toggleCheckbox = document.querySelector('.toggle');
 
-  function toggleTheme() {
-    document.body.classList.toggle('dark');
-  }
+  function toggleTheme() {    
+    if (toggleCheckbox.checked) {
+      localStorage.setItem( 'dark', true);
+    } else {
+      localStorage.setItem( 'dark', false);
+    }
+  };
+  function theme() {
+    let darkMode = document.querySelector('#dark-mode');
+    if (localStorage.dark === 'true') {
+      console.log('tratata');
+      document.body.classList.add('dark'); 
+      darkMode.checked = true;
+    } else {
+      console.log(localStorage.dark);
+      document.body.classList.remove('dark');
+    }
+  };
+
+  theme();
+  
 
   toggleCheckbox.addEventListener('click', toggleTheme);
+  toggleCheckbox.addEventListener('click', theme);
 
   // lang list
 
@@ -201,31 +240,5 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // <div class="page_main_list_news_filter list">
-  //   <div class="filter_item filter_active" list_item>Все</div>
-  //   <div class="filter_item">Популярные</div>
-  //   <div class="filter_item">Свежие</div>
-  // </div>
-  // <div class="page_main_list_news_blocks">
-  //   <div class="news_block most_popular blocks_item">
-
-  //   </div>
-  //   <div class="news_block most_newest">
-
-  //   </div>
-  //   <div class="news_block most_popular">
-
-  //   </div>
-  //   <div class="news_block most_newest">
-
-  //   </div>
-  //   <div class="news_block most_popular">
-
-  //   </div>
-  //   <div class="news_block most_newest">
-
-  //   </div>
-  // </div>
 
 });

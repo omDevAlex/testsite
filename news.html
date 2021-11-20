@@ -101,7 +101,7 @@
                         <div class="page_main_news_items">
                             <div class="page_main_news_item">                                
                                 <div class="page_main_news_item_content">
-                                    <a class="news1" href="#">
+                                    <a class="news1" data-modal-news href="#">
                                         <div class="page_main_news_item_content_h">
                                             DreamHack Masters Spring 2021<br>Расписание турнира
                                         </div>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="page_main_news_items_block">
                                 <div class="page_main_news_item_in_b">
-                                    <a class="news2" href="#">
+                                    <a class="news2" data-modal-news href="#">
                                         <div class="page_main_news_item_content_h">
                                             DreamHack Masters Spring 2021<br>Расписание турнира
                                         </div>
@@ -127,7 +127,7 @@
                                     </a>
                                 </div>
                                 <div class="page_main_news_item_in_b">
-                                    <a class="news3" href="#">
+                                    <a class="news3" data-modal-news href="#">
                                         <div class="page_main_news_item_content_h">
                                             DreamHack Masters Spring 2021<br>Расписание турнира
                                         </div>
@@ -139,7 +139,7 @@
                                     </a>
                                 </div>
                                 <div class="page_main_news_item_in_b mob_del">
-                                    <a class="news4" href="#">
+                                    <a class="news4" data-modal-news href="#">
                                         <div class="page_main_news_item_content_h">
                                             DreamHack Masters Spring 2021<br>Расписание турнира
                                         </div>
@@ -151,7 +151,7 @@
                                     </a>
                                 </div>
                                 <div class="page_main_news_item_in_b mob_del">
-                                    <a class="news5" href="#">
+                                    <a class="news5" data-modal-news href="#">
                                         <div class="page_main_news_item_content_h">
                                             DreamHack Masters Spring 2021<br>Расписание турнира
                                         </div>
@@ -184,7 +184,7 @@
                                             <span class="news_block_dop_views">115</span>
                                             <span class="news_block_dop_hashtag">#CSGO</span>
                                         </div>
-                                        <a href="pagenews.html">Подробнее</a>
+                                        <a href="#" data-modal-news>Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@
                                             <span class="news_block_dop_views">115</span>
                                             <span class="news_block_dop_hashtag">#CSGO</span>
                                         </div>
-                                        <a href="pagenews.html">Подробнее</a>
+                                        <a href="#" data-modal-news>Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@
                                             <span class="news_block_dop_views">115</span>
                                             <span class="news_block_dop_hashtag">#CSGO</span>
                                         </div>
-                                        <a href="pagenews.html">Подробнее</a>
+                                        <a href="#" data-modal-news>Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +232,7 @@
                                             <span class="news_block_dop_views">115</span>
                                             <span class="news_block_dop_hashtag">#CSGO</span>
                                         </div>
-                                        <a href="pagenews.html">Подробнее</a>
+                                        <a href="#" data-modal-news>Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                                             <span class="news_block_dop_views">115</span>
                                             <span class="news_block_dop_hashtag">#CSGO</span>
                                         </div>
-                                        <a href="pagenews.html">Подробнее</a>
+                                        <a href="#" data-modal-news>Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -517,6 +517,40 @@
                         </form>
                     </div>                                    
                 </div>                                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_news">
+        <div class="modal_news__dialog">
+            <div class="modal_news__content">
+                <div data-close-news class="modal_news__close">&times;</div>
+                <img src="images/img-onenews.png" alt="">
+                <div class="modal_news__content_main">
+                    <span>Обновления карты Ancient:</span>
+                    <ul>
+                        <li>Уменьшен наклонный камень возле центрального коннектора рядом с точкой А.</li>
+                        <li>Возле точки А убраны лишние листья и ветки кустов, чтобы улучшить видимость углов.</li>
+                        <li>Снижена громкость звуков птиц.</li>
+                        <li>Возле базы террористов добавили невидимые пиксели под воду, чтобы скинутое оружие не падало под текстуры.</li>
+                        <li>Убраны пиксельные зазоры возле строительных лесов рядом с точкой В.</li>
+                        <li>Убраны пиксельные зазоры в дверном проеме на пути от базы спецназа к точке А.</li>
+                        <li>Улучшен отскок гранат от крыш.</li>
+                        <li>Проведена общая оптимизация карты.</li>
+                    </ul>
+                    <p>
+                        Текущие соревнования серии RMR будут доиграны без этих нововведений, но компания ESL уже объявила, что Ancient будет заявлена в маппул на Intel Extreme Masters Season XVI — Summer, который начнется в июне.
+                    </p>
+                </div> 
+                <div class="modal_news__content_footer">
+                    <span class="author_news">AUTHOR</span>
+                    <div class="dop_news">
+                        <span class="dop_news_likes">61</span>
+                        <span class="dop_news_coment">174</span>
+                        <span class="dop_news_share">4</span>
+                    </div>
+                    <a href="#" >На форум</a>
+                </div>                  
             </div>
         </div>
     </div>

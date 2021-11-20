@@ -39,6 +39,9 @@ body {
     --icon-game: url(../images/icon-game.png);
     --icon-aboutus-page: url(../images/icon-aboutus-page.png);
     --icon-eye-news: url(../images/eye.png);
+    --icon-news-likes: url(../images/icon-news-likes.png);
+    --icon-news-coment: url(../images/icon-news-coment.png);
+    --icon-news-share: url(../images/icon-news-share.png);
 
     --bg-img-left: url(../images/bg-left.png);
     --bg-img-right: url(../images/bg-right.png);
@@ -78,6 +81,9 @@ body.dark {
     --icon-game: url(../images/icon-game-dark.png);
     --icon-aboutus-page: url(../images/icon-aboutus-page-dark.png);
     --icon-eye-news: url(../images/icon-eye.png);
+    --icon-news-likes: url(../images/icon-news-likes-dark.png);
+    --icon-news-coment: url(../images/icon-news-coment-dark.png);
+    --icon-news-share: url(../images/icon-news-share-dark.png);
 
     --bg-img-left: url(../images/bg-left-dark.png);
     --bg-img-right: url(../images/bg-right-dark.png);
@@ -589,13 +595,27 @@ nav .about:before {
     overflow:hidden;
     background-color:rgba(0,0,0,.5);
 }
-
-.show {
-    display:block
+.modal_news {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1050;
+    display:none;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgba(0,0,0,.5);
 }
-
+.show {
+    display:block;
+}
 .modal__dialog {
     max-width:500px;
+    margin:40px auto;
+    background-color: var(--bg-secondry);
+}
+.modal_news__dialog {
+    max-width:878px;
     margin:40px auto;
     background-color: var(--bg-secondry);
 }
@@ -603,6 +623,86 @@ nav .about:before {
     position:relative;
     width:100%;
     padding:40px;
+}
+.modal_news__content {
+    position:relative;
+    width:100%;
+}
+.modal_news__content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: -11px;
+}
+.modal_news__content_main {
+    font-family: 'jost-reg', sans-serif;
+    background: var(--smoll-blok-bg);
+    padding: 20px;
+    margin-top: 5px;
+}
+.modal_news__content_main ul {
+    padding-left: 35px;
+    margin: 15px 0;
+}
+.modal_news__content_footer {
+    font-family: 'jost-reg', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.dop_news_likes, .dop_news_coment, .dop_news_share {
+    position: relative;
+    padding-left: 28px;
+}
+.dop_news_likes, .dop_news_coment {
+    margin-right: 15px;
+}
+.dop_news_likes:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 20px;
+    height: 18px;
+    background-image: var(--icon-news-likes);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dop_news_coment:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    background-image: var(--icon-news-coment);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dop_news_share:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 20px;
+    height: 18px;
+    background-image: var(--icon-news-share);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.modal_news__content_footer a {
+    width: 180px;
+    height: 44px;
+    background: linear-gradient(48.14deg, #2A0463 0.31%, #5600FF 100%), #C4C4C4;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "jost-med", sans-serif;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 9px 0;
+    box-shadow: 0px 0px 26px -5px rgb(86 0 255 / 93%);
 }
 .modal__close {
     position:absolute;
@@ -616,39 +716,45 @@ nav .about:before {
     background-color:transparent;
     cursor:pointer
 }
-
+.modal_news__close {
+    position:absolute;
+    top:0;
+    right:14px;
+    font-size:30px;
+    color:#FFFFFF;
+    font-weight:500;
+    border:none;
+    background-color:transparent;
+    cursor:pointer
+}
 .tabcontainer {
     width: 100%;
     margin: 0 auto;
 }
-
 .tabcontent {
     width: 850px;
     position: relative;
     display: none;
 }
-
 .tabcontent form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .tabcontent form input, .tabcontent form button {
     margin-top: 20px;
     font-family: "jost-med";
 }
-
 .tabshow {
     display: contents;
-    animation-name:plavno;
-    animation-duration:1.3s;
+    animation-name: plavno;
+    animation-duration: 1.3s;
 }
 @keyframes plavno {
     from {
-        opacity:0;
+        opacity: 0;
     } to {
-        opacity:1;
+        opacity: 1;
     }
 }
 .tabheader {
@@ -668,7 +774,6 @@ nav .about:before {
     color: var(--accent-text);
     opacity: inherit;
 }
-
 footer {
     height: 225px;
     margin-top: -225px;
@@ -711,7 +816,6 @@ footer .social {
     height: 40px;
     cursor: pointer;
 }
-
 .social_vk:before {
     content: '';
     position: absolute;
@@ -734,7 +838,6 @@ footer .social {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .page {
     display: flex;
 }
@@ -773,8 +876,6 @@ footer .social {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 .tabcontainer_raiting {
     width: 100%;
     margin: 0 auto;
@@ -1130,7 +1231,6 @@ footer .social {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .active_turnir {
     margin-top: 32px;
 }
