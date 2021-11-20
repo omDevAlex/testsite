@@ -1588,6 +1588,7 @@ footer .social {
     font-family: 'jost-med', sans-serif;
     font-size: 16px;
     border: 1px solid var(--text);
+    color: var(--text); 
     padding: 18px;
     margin-top: 20px;
     cursor: pointer;
