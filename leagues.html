@@ -31,9 +31,9 @@
                         <nav>
                             <ul>
                                 <li><a class="main" href="index.html">Главная</a></li>
-                                <li><a class="news" href="#">Новости</a></li>
+                                <li><a class="news" href="news.html">Новости</a></li>
                                 <li><a class="turnir" href="tourneys.html">Турниры</a></li>
-                                <li><a class="ligi" href="leagues.html">Лиги</a></li>
+                                <li><a class="ligi" href="#">Лиги</a></li>
                                 <li><a class="rating" href="rating.html">Рейтинг</a></li>
                                 <li><a class="about" href="about.html">О нас</a></li>
                             </ul>
@@ -94,167 +94,273 @@
         <div class="container container_page">
             <div class="page">
                 <div class="page_main">
-                    <div class="page_main_news">
-                        <div class="page_main_news_h">
-                            <span class="page_main_news_h_icon">Новости</span>
+                    <div class="page_main_leagues">
+                        <div class="page_main_leagues_h">
+                            <span class="page_main_leagues_h_icon">Выбор игры</span>
                         </div>
-                        <div class="page_main_news_items">
-                            <div class="page_main_news_item">                                
-                                <div class="page_main_news_item_content">
-                                    <a class="news1" data-modal-news href="#">
-                                        <div class="page_main_news_item_content_h">
-                                            DreamHack Masters Spring 2021<br>Расписание турнира
-                                        </div>
-                                        <div class="page_main_news_item_content_tag-view">
-                                            <span class="page_main_news_item_content_tag">#CSGO</span>
-                                            <span class="page_main_news_item_content_view">163</span>
-                                        </div>
-                                        <div class="page_main_news_item_content_date">30.04.21</div>
-                                    </a>
+                        <div class="page_main_leagues_tab">
+                            <div class="tabcontainer_game">
+                                <div class="tabheader_game">
+                                    <div class="tabheader_game__items">
+                                        <div class="tabheader_game__item tab_cs tabheader_game__item_active">CS:GO</div>
+                                        <div class="tabheader_game__item tab_dota">DOTA2</div>
+                                        <div class="tabheader_game__item tab-fifa">FIFA20</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="page_main_news_items_block">
-                                <div class="page_main_news_item_in_b">
-                                    <a class="news2" data-modal-news href="#">
-                                        <div class="page_main_news_item_content_h">
-                                            DreamHack Masters Spring 2021<br>Расписание турнира
+                                <div class="tabcontent_game tabshow_game">                                    
+                                    <div class="leagues_tabcontent_h_with_filter">
+                                        <div class="leagues_tabcontent_h">
+                                            Все лиги
                                         </div>
-                                        <div class="page_main_news_item_content_tag-view">
-                                            <span class="page_main_news_item_content_tag">#CSGO</span>
-                                            <span class="page_main_news_item_content_view">163</span>
+                                        <div class="leagues_tabcontent_filter_cs">
+                                            <div class="league_item_cs league_active_cs"data-id="fxf">5x5</div>
+                                            <div class="league_item_cs"data-id="txt">2x2</div>
+                                            <div class="league_item_cs"data-id="oxo">1x1</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="leagues_tabcontent_bloks">
+                                        <div class="league_bloks_cs fxf">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>5х5</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="page_main_news_item_content_date">30.04.21</div>
-                                    </a>
+                                        <div class="league_bloks_cs fxf">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>5х5</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_bloks_cs txt">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>2x2</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_bloks_cs txt">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>2x2</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_bloks_cs txt">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>2x2</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_bloks_cs oxo">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>1x1</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_bloks_cs oxo">
+                                            <img src="images/img-cs-2.png" alt="">
+                                            <div class="leagues_item_head">
+                                                <span>UNSTOP LEAGUE SEASON 1</span>
+                                                <span>$ 500</span>
+                                            </div>
+                                            <div class="league_item_main">
+                                                <div class="league_item_info">
+                                                    <div class="league_item_info_mode">
+                                                        Режим:<br>
+                                                        <span>1x1</span>
+                                                    </div>
+                                                    <div class="league_item_info_end">
+                                                        До конца сезона:<br>
+                                                        <span>60 дней</span>
+                                                    </div>
+                                                    <div class="league_item_info_rating">
+                                                        Rating:<br>
+                                                        <span>>1000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="league_item_btns">
+                                                    <form action="#">
+                                                        <button class="league_item_btns_pil">Играть в лиге</button>
+                                                    </form>
+                                                    <a href="league.html" class="league_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                               
                                 </div>
-                                <div class="page_main_news_item_in_b">
-                                    <a class="news3" data-modal-news href="#">
-                                        <div class="page_main_news_item_content_h">
-                                            DreamHack Masters Spring 2021<br>Расписание турнира
+                                <div class="tabcontent_game">
+                                    <div class="leagues_tabcontent_h_with_filter">
+                                        <div class="leagues_tabcontent_h">
+                                            Все лиги
                                         </div>
-                                        <div class="page_main_news_item_content_tag-view">
-                                            <span class="page_main_news_item_content_tag">#CSGO</span>
-                                            <span class="page_main_news_item_content_view">163</span>
-                                        </div>
-                                        <div class="page_main_news_item_content_date">30.04.21</div>
-                                    </a>
+                                        <div class="leagues_tabcontent_filter_dt">
+                                            <div class="league_item_dt league_active_dt"data-id="fxf">5x5</div>
+                                            <div class="league_item_dt"data-id="txt">2x2</div>
+                                            <div class="league_item_dt"data-id="oxo">1x1</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="leagues_tabcontent_bloks">
+                                        <div class="league_bloks_dt fxf">5x5 dt</div>
+                                        <div class="league_bloks_dt txt">2x2 dt</div>
+                                        <div class="league_bloks_dt oxo">1x1 dt</div>
+                                    </div>   
                                 </div>
-                                <div class="page_main_news_item_in_b mob_del">
-                                    <a class="news4" data-modal-news href="#">
-                                        <div class="page_main_news_item_content_h">
-                                            DreamHack Masters Spring 2021<br>Расписание турнира
+                                <div class="tabcontent_game">
+                                    <div class="leagues_tabcontent_h_with_filter">
+                                        <div class="leagues_tabcontent_h">
+                                            Все лиги
                                         </div>
-                                        <div class="page_main_news_item_content_tag-view">
-                                            <span class="page_main_news_item_content_tag">#CSGO</span>
-                                            <span class="page_main_news_item_content_view">163</span>
-                                        </div>
-                                        <div class="page_main_news_item_content_date">30.04.21</div>
-                                    </a>
-                                </div>
-                                <div class="page_main_news_item_in_b mob_del">
-                                    <a class="news5" data-modal-news href="#">
-                                        <div class="page_main_news_item_content_h">
-                                            DreamHack Masters Spring 2021<br>Расписание турнира
-                                        </div>
-                                        <div class="page_main_news_item_content_tag-view">
-                                            <span class="page_main_news_item_content_tag">#CSGO</span>
-                                            <span class="page_main_news_item_content_view">163</span>
-                                        </div>
-                                        <div class="page_main_news_item_content_date">30.04.21</div>
-                                    </a>
+                                        <div class="leagues_tabcontent_filter_ff">
+                                            <div class="league_item_ff league_active_ff"data-id="fxf">5x5</div>
+                                            <div class="league_item_ff"data-id="txt">2x2</div>
+                                            <div class="league_item_ff"data-id="oxo">1x1</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="leagues_tabcontent_bloks">
+                                        <div class="league_bloks_ff fxf">5x5 ff</div>
+                                        <div class="league_bloks_ff txt">2x2 ff</div>
+                                        <div class="league_bloks_ff oxo">1x1 ff</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <div class="page_main_list_news">
-                        <div class="page_main_list_news_filter">
-                            <div class="filter_item filter_active" data-id="all">Все</div>
-                            <div class="filter_item" data-id="popular">Популярные</div>
-                            <div class="filter_item" data-id="newest">Свежие</div>
-                        </div>
-                        <div class="page_main_list_news_blocks">
-                            <div class="news_block popular">
-                                <img src="images/new1.png" alt="Новость">
-                                <div class="news_block_main">
-                                    <p>
-                                        Gambit Esports победила Akuma в первом раунде EPIC CIS League Spring 2021 по CS:GO. Результат встречи — 2:0 (25:23 на Mirage, 16:4 на Vertigo).
-                                    </p>
-                                    <div class="news_block_main_dop">
-                                        <div class="news_block_dop">
-                                            <span class="news_block_dop_date">29.04.21</span>
-                                            <span class="news_block_dop_views">115</span>
-                                            <span class="news_block_dop_hashtag">#CSGO</span>
-                                        </div>
-                                        <a href="#" data-modal-news>Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_block newest">
-                                <img src="images/new2.png" alt="Новость">
-                                <div class="news_block_main">
-                                    <p>
-                                        Gambit Esports победила Akuma в первом раунде EPIC CIS League Spring 2021 по CS:GO. Результат встречи — 2:0 (25:23 на Mirage, 16:4 на Vertigo).
-                                    </p>
-                                    <div class="news_block_main_dop">
-                                        <div class="news_block_dop">
-                                            <span class="news_block_dop_date">29.04.21</span>
-                                            <span class="news_block_dop_views">115</span>
-                                            <span class="news_block_dop_hashtag">#CSGO</span>
-                                        </div>
-                                        <a href="#" data-modal-news>Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_block popular">
-                                <img src="images/new3.png" alt="Новость">
-                                <div class="news_block_main">
-                                    <p>
-                                        Gambit Esports победила Akuma в первом раунде EPIC CIS League Spring 2021 по CS:GO. Результат встречи — 2:0 (25:23 на Mirage, 16:4 на Vertigo).
-                                    </p>
-                                    <div class="news_block_main_dop">
-                                        <div class="news_block_dop">
-                                            <span class="news_block_dop_date">29.04.21</span>
-                                            <span class="news_block_dop_views">115</span>
-                                            <span class="news_block_dop_hashtag">#CSGO</span>
-                                        </div>
-                                        <a href="#" data-modal-news>Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_block newest">
-                                <img src="images/new4.png" alt="Новость">
-                                <div class="news_block_main">
-                                    <p>
-                                        Gambit Esports победила Akuma в первом раунде EPIC CIS League Spring 2021 по CS:GO. Результат встречи — 2:0 (25:23 на Mirage, 16:4 на Vertigo).
-                                    </p>
-                                    <div class="news_block_main_dop">
-                                        <div class="news_block_dop">
-                                            <span class="news_block_dop_date">29.04.21</span>
-                                            <span class="news_block_dop_views">115</span>
-                                            <span class="news_block_dop_hashtag">#CSGO</span>
-                                        </div>
-                                        <a href="#" data-modal-news>Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_block newest">
-                                <img src="images/new5.png" alt="Новость">
-                                <div class="news_block_main">
-                                    <p>
-                                        Gambit Esports победила Akuma в первом раунде EPIC CIS League Spring 2021 по CS:GO. Результат встречи — 2:0 (25:23 на Mirage, 16:4 на Vertigo).
-                                    </p>
-                                    <div class="news_block_main_dop">
-                                        <div class="news_block_dop">
-                                            <span class="news_block_dop_date">29.04.21</span>
-                                            <span class="news_block_dop_views">115</span>
-                                            <span class="news_block_dop_hashtag">#CSGO</span>
-                                        </div>
-                                        <a href="#" data-modal-news>Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="page_main_list_news_more">Показать еще</button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="page_asside">
                     <div class="page_asside_raiting">
@@ -469,9 +575,9 @@
                 <nav>
                     <ul>
                         <li><a class="main" href="index.html">Главная</a></li>
-                        <li><a class="news" href="#">Новости</a></li>
+                        <li><a class="news" href="news.html">Новости</a></li>
                         <li><a class="turnir" href="tourneys.html">Турниры</a></li>
-                        <li><a class="ligi" href="leagues.html">Лиги</a></li>
+                        <li><a class="ligi" href="#">Лиги</a></li>
                         <li><a class="rating" href="rating.html">Рейтинг</a></li>
                         <li><a class="about" href="about.html">О нас</a></li>
                     </ul>

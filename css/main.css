@@ -42,6 +42,7 @@ body {
     --icon-news-likes: url(../images/icon-news-likes.png);
     --icon-news-coment: url(../images/icon-news-coment.png);
     --icon-news-share: url(../images/icon-news-share.png);
+    --icon-liga-page: url(../images/icon-liga-page.png);
 
     --bg-img-left: url(../images/bg-left.png);
     --bg-img-right: url(../images/bg-right.png);
@@ -84,6 +85,7 @@ body.dark {
     --icon-news-likes: url(../images/icon-news-likes-dark.png);
     --icon-news-coment: url(../images/icon-news-coment-dark.png);
     --icon-news-share: url(../images/icon-news-share-dark.png);
+    --icon-liga-page: url(../images/icon-liga-page-dark.png);
 
     --bg-img-left: url(../images/bg-left-dark.png);
     --bg-img-right: url(../images/bg-right-dark.png);
@@ -1425,19 +1427,19 @@ footer .social {
     color: #fff;
     font-size: 24px;
 }
-.tabheader_raiting__item.tab_cs{
+.tab_cs{
     background-image: url(../images/img-tab-cs.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.tabheader_raiting__item.tab_dota{
+.tab_dota{
     background-image: url(../images/img-tab-dota.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.tabheader_raiting__item.tab-fifa{
+.tab-fifa{
     background-image: url(../images/img-tab-fifa.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1593,4 +1595,351 @@ footer .social {
     margin-top: 20px;
     cursor: pointer;
 }
+.tabcontainer_game {
+    width: 100%;
+    margin: 0 auto;
+}
+.tabheader_game {
+    width: 100%;
+    padding: 10px 0 9px;
+}
+.tabheader_game__items {
+    display: flex;
+    justify-content: space-between;
+}
+.tabheader_game__item {
+    width: 32%;
+    height: 87px;
+    text-align: center;
+    padding: 25px 0;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.tabheader_game__item_active {
+    box-shadow: 0px 0px 26px -5px rgb(86 0 255 / 93%);
+    opacity: 1;
+}
+.tabcontent_game {
+    /* width: 850px; */
+    position: relative;
+    display: none;
+}
+.tabshow_game {
+    display: contents;
+    animation-name: plavno;
+    animation-duration: 1.3s;
+}
+.page_main_tourneys_h {
+    margin-bottom: 10px;
+}
+.page_main_tourneys_h_icon {
+    position: relative;
+    font-size: 19px;
+    padding-left: 35px;
+}
+.page_main_tourneys_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 26px;
+    height: 20px;
+    background-image: var(--icon-game);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.turnir_bloks_cs, .turnir_bloks_dt, .turnir_bloks_ff {
+    display: none;
+}
+.turnir_bloks_cs.active, .turnir_bloks_dt.active, .turnir_bloks_ff.active {
+    display: flex;
+}
+.turnir_item_cs, .turnir_item_dt, .turnir_item_ff {
+    cursor: pointer;
+}
+.tourneys_tabcontent_h_with_filter {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.tourneys_tabcontent_filter_cs, .tourneys_tabcontent_filter_dt, .tourneys_tabcontent_filter_ff {
+    display: flex;
+}
+.tourneys_tabcontent_filter_cs .turnir_item_cs, .tourneys_tabcontent_filter_dt .turnir_item_dt, .tourneys_tabcontent_filter_ff .turnir_item_ff {
+    opacity: 0.5;
+}
+.tourneys_tabcontent_filter_cs .turnir_active_cs, .tourneys_tabcontent_filter_dt .turnir_active_dt, .tourneys_tabcontent_filter_ff .turnir_active_ff {
+    opacity: 1;
+    border-bottom: 2px solid #5600FF;
+}
+.tourneys_tabcontent_filter_cs div[data-id='active'], .tourneys_tabcontent_filter_dt div[data-id='active'], .tourneys_tabcontent_filter_ff div[data-id='active'] {
+    margin-right: 20px;
+}
+.tourneys_tabcontent_filter_cs div[data-id='completing'], .tourneys_tabcontent_filter_dt div[data-id='completing'], .tourneys_tabcontent_filter_ff div[data-id='completing'] {
+    margin-right: 20px;
+}
+.tourneys_tabcontent_h {
+    position: relative;
+    padding-left: 35px;
+}
+.tourneys_tabcontent_h:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 25px;
+    height: 20px;
+    background-image: var(--icon-turnir-page-active);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+
+
+.page_main_leagues_h {
+    margin-bottom: 10px;
+}
+.page_main_leagues_h_icon {
+    position: relative;
+    font-size: 19px;
+    padding-left: 35px;
+}
+.page_main_leagues_h_icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 26px;
+    height: 20px;
+    background-image: var(--icon-game);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.league_bloks_cs, .league_bloks_dt, .league_bloks_ff {
+    display: none;
+}
+.league_bloks_cs.fxf, .league_bloks_dt.fxf, .league_bloks_ff.fxf {
+    display: flex;
+}
+.league_item_cs, .league_item_dt, .league_item_ff {
+    cursor: pointer;
+}
+.leagues_tabcontent_h_with_filter {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.leagues_tabcontent_filter_cs, .leagues_tabcontent_filter_dt, .leagues_tabcontent_filter_ff {
+    display: flex;
+}
+.leagues_tabcontent_filter_cs .league_item_cs, .leagues_tabcontent_filter_dt .league_item_dt, .leagues_tabcontent_filter_ff .league_item_ff {
+    opacity: 0.5;
+}
+.leagues_tabcontent_filter_cs .league_active_cs, .leagues_tabcontent_filter_dt .league_active_dt, .leagues_tabcontent_filter_ff .league_active_ff {
+    opacity: 1;
+    border-bottom: 2px solid #5600FF;
+}
+.leagues_tabcontent_filter_cs div[data-id='fxf'], .leagues_tabcontent_filter_dt div[data-id='fxf'], .leagues_tabcontent_filter_ff div[data-id='fxf'] {
+    margin-right: 20px;
+}
+.leagues_tabcontent_filter_cs div[data-id='txt'], .leagues_tabcontent_filter_dt div[data-id='txt'], .leagues_tabcontent_filter_ff div[data-id='txt'] {
+    margin-right: 20px;
+}
+.leagues_tabcontent_h {
+    position: relative;
+    padding-left: 30px;
+}
+.leagues_tabcontent_h:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background-image: var(--icon-liga-page);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.league_bloks_cs, .league_bloks_dt, .league_bloks_ff {
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    background: var(--smoll-blok-bg);
+    margin-top: 20px;
+}
+.league_bloks_cs img, .league_bloks_dt img, .league_bloks_ff img {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+.leagues_item_head {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding: 0 40px 15px 110px;
+}
+.leagues_item_head:after{
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    width: 23px;
+    height: 30px;
+    background-image: var(--icon-cs);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.league_item_main {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    padding-top: 15px;
+    border-top: 1px solid var(--line-color);
+    align-items: center;
+}
+.league_item_info {
+    display: flex;
+    line-height: 18px;
+}
+.league_item_info div {
+    margin-right: 15px;
+}
+.league_item_info span {
+    font-family: 'jost-reg', sans-serif;
+}
+.league_item_btns {
+    display: flex;
+}
+.league_item_btns_pil {
+    width: 180px;
+    height: 44px;
+    border: 2px solid var(--accent-text);
+    color: var(--accent-text);
+    background: transparent;
+    font-family: 'jost-med', sans-serif;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.league_item_btns_more {
+    width: 180px;
+    height: 44px;
+    background: linear-gradient(48.14deg, #2A0463 0.31%, #5600FF 100%), #C4C4C4;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "jost-med";
+    text-decoration: none;
+    /* display: block; */
+    text-align: center;
+    padding: 9px 0;
+    box-shadow: 0px 0px 26px -5px rgb(86 0 255 / 93%);
+}
+.page_main_league .tabheader_game__items {
+    justify-content: flex-start;
+    background-color: var(--bg-secondry);
+    padding: 0 15px;
+}
+.page_main_league .tabheader_game__item:first-child {
+    margin-right: 25px;
+}
+.page_main_league .tabheader_game__item {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 15px 0;
+}
+.page_main_league .tabheader_game__item_active {
+    box-shadow: none;
+    border-bottom: 1px solid #5600FF;
+    opacity: 1;
+}
+.page_main_league .raiting_item {
+    padding: 20px 15px 20px 45px;
+    background: var(--smoll-blok-bg);
+    margin: 10px 0 0 0;
+}
+.page_main_league .raiting_place {
+    top: 21px;
+    left: 15px;
+}
+.page_main_league .tabcontent_game .league_bg {
+    background: var(--smoll-blok-bg);
+    padding: 15px;
+}
+.page_main_league .tabcontent_game p {
+    margin-bottom: 15px;
+}
+.page_main_league .tabheader_game {
+    margin: 25px 0;
+}
+.font_reg {
+    font-family: 'jost-reg', sans-serif;
+}
+.league_h {
+    display: block;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.lldmb {
+    margin-bottom: 15px;
+}
+.page_main_league_registration img {
+    width: 100%;
+    margin-bottom: -6px;
+}
+.page_main_league_registration_block {
+    background: var(--bg-secondry);
+    padding: 20px 15px 15px;
+    border-top: 3px solid #5600FF;
+}
+.page_main_league_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page_main_league_block_h {
+    font-size: 19px;
+}
+.page_main_league_registration_block .regi_league {
+    width: 180px;
+    height: 44px;
+    border: 2px solid var(--accent-text);
+    color: var(--accent-text);
+    background: transparent;
+    font-family: 'jost-med', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.page_main_league_block {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--line-color);
+    position: relative;
+}
+.page_main_league_info {
+    display: flex;
+    margin-top: 15px;
+}
+.page_main_league_registration_block .mode, .page_main_league_registration_block .end, .page_main_league_registration_block .raiting {
+    margin-right: 15px;
+}
+.page_main_league_block:before {
+    content: '';
+    position: absolute;
+    right: 205px;
+    top: 9px;
+    width: 23px;
+    height: 30px;
+    background-image: var(--icon-cs);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -144,7 +144,9 @@
 	.video_section {
 		height: 540px;
 	}
-	
+	.page_asside {
+		margin-top: 40px;
+	}
 }
 @media (min-width: 665px) and (max-width: 1150px) {
 	.page_asside_ad.rat {
@@ -218,6 +220,15 @@
 	}
 	.active_turnir_list_item_bottom {
 		margin-left: 0;
+	}
+	.league_item_main {
+		flex-direction: column;
+    	align-items: baseline;
+	}
+	.league_item_btns {
+		margin-top: 14px;
+		width: 100%;
+		justify-content: flex-end;
 	}
 }
 /* sm <= Medium (md) */
@@ -329,6 +340,21 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+	.tourneys_tabcontent_filter_cs, .tourneys_tabcontent_filter_dt, .tourneys_tabcontent_filter_ff {
+		font-size: 17px;
+	}
+	.page_main_league_block {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.page_main_league_block:before {
+		right: 15px;
+		top: -3px;
+	}
+	.page_main_league_registration_block .regi_league {
+		margin-top: 15px;
+	}
 }
 @media (max-width : 576px) {
 	.modal__dialog {
@@ -362,6 +388,33 @@
 	.modal_news__content img {
 		height: 190px;
 	}
+	.tourneys_tabcontent_h_with_filter {
+		flex-direction: column;
+	}
+	.tourneys_tabcontent_filter_cs, .tourneys_tabcontent_filter_dt, .tourneys_tabcontent_filter_ff {
+		margin-top: 10px;
+	}
+	.league_bloks_cs img, .league_bloks_dt img, .league_bloks_ff img {
+		width: 79px;
+	}
+	.leagues_item_head {
+		flex-direction: column;
+    	line-height: 24px;
+		padding: 0 40px 15px 90px;
+	}
+	.leagues_item_head:after {
+		top: 25px;
+	}
+	.league_item_main {
+		margin-left: 0;
+	}
+	.league_item_info {
+		width: 100%;
+		justify-content: space-around;
+	}
+	.league_item_btns {
+		justify-content: space-between;
+	}
 }
 
 @media (max-width : 500px) {
@@ -374,15 +427,36 @@
 	}
 }
 @media (max-width : 476px) {
+	.tabheader_game__items {
+		flex-direction: column;
+	}
+	.tabheader_game__item {
+		width: 100%;
+	}
 	.page_main_rat_game_tab .tabheader_raiting__items {
 		flex-direction: column;
 	}
 	.page_main_rat_game_tab .tabheader_raiting__item {
 		width: 100%;
 	}
-	.page_main_rat_game_tab .tab_dota, .page_main_rat_game_tab .tab-fifa {
+	.tab_dota, .tab-fifa {
 		margin-top: 15px;
 	} 
+	.league_item_btns {
+		flex-direction: column;
+	}
+	.league_item_btns_pil, .league_item_btns_more {
+		width: 100%;
+	}
+	.league_item_btns_more {
+		margin-top: 15px;
+	}
+	.leagues_item_head {
+		font-size: 15px;
+	}
+	.page_main_league .tabheader_game__items {
+		flex-direction: row;
+	}
 }
 @media (max-width : 455px) {
 	.page_main_news_items {
@@ -418,6 +492,20 @@
 	}
 	.future_turnir_h_all_mob-none, .active_turnir_h_all_mob-none {
 		display: none;
+	}
+	.page_main_league_block:before {
+		top: 51px;
+	}
+	.page_main_league_info {
+		flex-wrap: wrap;
+	}
+	.page_main_league_info .fond {
+		width: 100%;
+	}
+}
+@media (max-width : 380px) {
+	.tourneys_tabcontent_filter_cs, .tourneys_tabcontent_filter_dt, .tourneys_tabcontent_filter_ff {
+		flex-direction: column;
 	}
 }
 
