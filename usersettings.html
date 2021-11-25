@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UNSTOP.GG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">    
+</head>
+<body>
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+	<div class="wrap">
+        <header>
+            <div class="container container_header">
+                <div class="logo">
+                    <div class="logo_img"></div>
+                    <div class="logo_name">UN<span>STOP</span>.GG</div>
+                </div>
+                <div class="menu">
+                    <div class="menu_open"><span>Меню</span></div>
+                    <div class="menu_mobile">
+                        <div class="logo">
+                            <div class="logo_img"></div>
+                            <div class="logo_name">UN<span>STOP</span>.GG</div>
+                        </div>
+                        <div class="menu_close"></div>
+                        <nav>
+                            <ul>
+                                <li><a class="main" href="#">Главная</a></li>
+                                <li><a class="news" href="#">Новости</a></li>
+                                <li><a class="turnir" href="#">Турниры</a></li>
+                                <li><a class="ligi" href="#">Лиги</a></li>
+                                <li><a class="rating" href="#">Рейтинг</a></li>
+                                <li><a class="about" href="#">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>                    
+                    <div class="tools">                        
+                        <div class="lang">
+                            <ul class="lang_choice">
+                                <li class="lang_active">
+                                    <a href="#">
+                                        <img class="lang_openlist" src="images/ru-lang.png" alt="ru">
+                                    </a>                                
+                                    <ul class="lang_sublist">
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/en-lang.png" alt="en">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/es-lang.png" alt="en">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="theme_form">
+                                <input id="dark-mode" class="toggle" type="checkbox">
+                                <label for="dark-mode"></label>
+                            </form>
+                        </div>                       
+                        <div class="chat">
+                            <div class="chat_icon"></div>
+                            <div class="chat_masseges">
+                                У вас нет сообщений...
+                            </div>
+                        </div>
+                        <div class="notif">
+                            <div class="notif_icon"></div>
+                            <span class="notif_count">1</span>
+                            <div class="notif_masseges">
+                                <ul>
+                                    <li><a href="#">Начало турнира</a></li>
+                                    <li><a href="#">Новость 2</a></li>
+                                    <li><a href="#">Новость 3</a></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+                <div class="login user_active">
+                    <a href="userprofile.html" class="user_login">
+                        <span class="user_name">UnstopGod</span>
+                        <img src="images/avatar-mini.png" alt="avatar" clsaa="user_avatar">
+                    </a>                     
+                </div>
+            </div>
+        </header>
+        <div class="container container_page">
+            <div class="page">
+                <div class="page_asside settings_page">
+                    <div class="profile_asside">
+                        <div class="profile_asside_ava">
+                            <img src="images/img-ava-profile.png" alt="ava">
+                            <div class="profile_asside_info">
+                                <span class="profile_asside_info_nikname">UnstopGod</span>
+                                <div class="profile_asside_info_stat">
+                                    <span>Статус: <span class="font_reg">Пользователь</span></span>
+                                    <span>Репутация: <span class="font_reg">0</span></span>
+                                    <span>Похвал: <span class="font_reg">0</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_asside_footer">
+                            <div class="profile_asside_footer_form">
+                                <form action="#">
+                                    <button data-modal class="purple-button">Написать сообщение</button>
+                                </form>
+                            </div>
+                            <div class="profile_asside_footer_links">
+                                <div>
+                                    <a href="#" class="prof-vk"></a>
+                                    <a href="#" class="prof-fb"></a>
+                                    <a href="#" class="prof-yt"></a>
+                                    <a href="#" class="prof-ms"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="prof-gm"></a>
+                                <a href="#" class="prof-at"></a>
+                                <a href="#" class="prof-ps"></a>
+                                <a href="#" class="prof-xb"></a>
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page_main">
+                    <div class="tabcontainer profile_tab_set">
+                        <div class="tabheader">
+                            <div class="tabheader__items">
+                                <div class="tabheader__item tabheader__item_active">Мои данные</div>
+                                <div class="tabheader__item">О себе</div>
+                                <div class="tabheader__item_right">
+                                    <a href="userprofile.html">Вернуться к профилю</a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="tabcontent tabshow">
+                            <div class="user_data">
+                                <p>Персональная информация</p>
+                                <form action="#">
+                                    <label for="name" class="name_label">Имя</label>
+                                    <input id="name" type="text" name="name">
+                                    <label for="lastname" class="lastname_label">Фамилия</label>
+                                    <input id="lastname" type="text" name="lastname">
+                                    <label for="nikname" class="nikname_label">Никнейм</label>
+                                    <input id="nikname" type="text" name="nikname">
+                                    <button class="purple-button">Сохранить</button>
+                                </form>
+                                <p>Электронная почта</p>
+                                <form action="#">
+                                    <label for="email" class="email_label">Адрес эл. почты</label>
+                                    <input id="email" type="text" name="email">
+                                    <button class="purple-button">Подтвердить почту</button>
+                                </form>
+                                <p>Соц. сети и сервисы</p>
+                                <form action="#">
+                                    <label for="social1" class="social1">Вконтакте</label>
+                                    <input id="social1" type="text" name="social1">
+                                    <label for="social2" class="social2">Facebook</label>
+                                    <input id="social2" type="text" name="social2">
+                                    <label for="social3" class="social3">YouTube</label>
+                                    <input id="social3" type="text" name="social3">
+                                    <label for="social4" class="social4">Twitch</label>
+                                    <input id="social4" type="text" name="social4">
+                                    <label for="social5" class="social5">Steam</label>
+                                    <input id="social5" type="text" name="social5">
+                                    <label for="social6" class="social6">Battle.net</label>
+                                    <input id="social6" type="text" name="social6">
+                                    <label for="social7" class="social7">PlayStation</label>
+                                    <input id="social7" type="text" name="social7">
+                                    <label for="social8" class="social8">Xbox</label>
+                                    <input id="social8" type="text" name="social8">
+                                    <button class="purple-button">Сохранить</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabcontent">
+                            <div class="user_about">
+                                <p>Информация о себе</p>
+                                <form action="#">
+                                    <textarea name="about" cols="30" rows="10"></textarea>
+                                    <button class="purple-button">Сохранить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_main">
+                <div class="logo">
+                    <div class="logo_img"></div>
+                    <div class="logo_name">UN<span>STOP</span>.GG</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="main" href="#">Главная</a></li>
+                        <li><a class="news" href="#">Новости</a></li>
+                        <li><a class="turnir" href="#">Турниры</a></li>
+                        <li><a class="ligi" href="#">Лиги</a></li>
+                        <li><a class="rating" href="#">Рейтинг</a></li>
+                        <li><a class="about" href="#">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://vk.com" class="social_vk" target="_blank"></a>
+                    <a href="https://www.facebook.com" class="social_fb" target="_blank"></a>
+                </div>
+            </div>
+            <div class="footer_info">
+                <a class="pol" href="#">Политика конфиденциальности</a>
+                <a class="use" href="#">Пользовательское соглашение</a>
+                <span>© unstop.gg 2020 All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div data-close class="modal__close">&times;</div>                    
+                <form action="#" class="form_profile_massege">
+                    <input required placeholder="Тема" name="theme" type="text">
+                    <textarea required placeholder="Сообщение" name="comment" cols="40" rows="3"></textarea>
+                    <button class="purple-button">Отправить</button>
+                </form>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_news">
+        <div class="modal_news__dialog">
+            <div class="modal_news__content">
+                <div data-close-news class="modal_news__close">&times;</div>
+                <img src="images/img-onenews.png" alt="">
+                <div class="modal_news__content_main">
+                    <span>Обновления карты Ancient:</span>
+                    <ul>
+                        <li>Уменьшен наклонный камень возле центрального коннектора рядом с точкой А.</li>
+                        <li>Возле точки А убраны лишние листья и ветки кустов, чтобы улучшить видимость углов.</li>
+                        <li>Снижена громкость звуков птиц.</li>
+                        <li>Возле базы террористов добавили невидимые пиксели под воду, чтобы скинутое оружие не падало под текстуры.</li>
+                        <li>Убраны пиксельные зазоры возле строительных лесов рядом с точкой В.</li>
+                        <li>Убраны пиксельные зазоры в дверном проеме на пути от базы спецназа к точке А.</li>
+                        <li>Улучшен отскок гранат от крыш.</li>
+                        <li>Проведена общая оптимизация карты.</li>
+                    </ul>
+                    <p>
+                        Текущие соревнования серии RMR будут доиграны без этих нововведений, но компания ESL уже объявила, что Ancient будет заявлена в маппул на Intel Extreme Masters Season XVI — Summer, который начнется в июне.
+                    </p>
+                </div> 
+                <div class="modal_news__content_footer">
+                    <span class="author_news">AUTHOR</span>
+                    <div class="dop_news">
+                        <span class="dop_news_likes">61</span>
+                        <span class="dop_news_coment">174</span>
+                        <span class="dop_news_share">4</span>
+                    </div>
+                    <a href="#" >На форум</a>
+                </div>                  
+            </div>
+        </div>
+    </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -108,32 +108,34 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsRait = document.querySelectorAll('.tabheader_raiting__item'),
         tabsContentRait = document.querySelectorAll('.tabcontent_raiting');
 
-  function hideTabRait() {
-    tabsContentRait.forEach(item => {
-        item.classList.remove('tabshow_raiting');
-    });
-    tabsRait.forEach(item => {
-        item.classList.remove('tabheader_raiting__item_active');
-    });
-  }
-
-  function showTabRait(i) {
-    tabsContentRait[i].classList.add('tabshow_raiting');
-    tabsRait[i].classList.add('tabheader_raiting__item_active');
-  }
-
-  tabsParentRait.addEventListener('click', (e) => {
-  const target = e.target;
-
-  if (target && target.classList.contains('tabheader_raiting__item')) {
-      tabsRait.forEach((item, i) => {
-          if (target == item) {
-              hideTabRait();
-              showTabRait(i);
-          }
+  if (tabsParentRait !== null) {
+    function hideTabRait() {
+      tabsContentRait.forEach(item => {
+          item.classList.remove('tabshow_raiting');
       });
-  }
-  });    
+      tabsRait.forEach(item => {
+          item.classList.remove('tabheader_raiting__item_active');
+      });
+    }
+  
+    function showTabRait(i) {
+      tabsContentRait[i].classList.add('tabshow_raiting');
+      tabsRait[i].classList.add('tabheader_raiting__item_active');
+    }
+  
+    tabsParentRait.addEventListener('click', (e) => {
+    const target = e.target;
+  
+    if (target && target.classList.contains('tabheader_raiting__item')) {
+        tabsRait.forEach((item, i) => {
+            if (target == item) {
+                hideTabRait();
+                showTabRait(i);
+            }
+        });
+    }
+    });
+  }  
 
   // lang list
 
@@ -543,7 +545,101 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     });
   }
+  const filterProfile = document.querySelector('.profile_tab_filter'),
+        filterblock = document.querySelectorAll('.filter_block'),
+        filterItem = document.querySelectorAll('.filter_item');
 
+  if (filterProfile !==null) {
+    function filter() {
+      filterProfile.addEventListener('click', e => {
+        const targetId = e.target.dataset.id;
+        const target = e.target;
+  
+        if (target.classList.contains('filter_item')) {
+          filterItem.forEach(listI => listI.classList.remove('filter_active'));
+          target.classList.add('filter_active');
+        }
+  
+        switch(targetId) {
+          case 'all':
+            getItems('filter_block');
+            break;
+          case 'active':
+            getItems(targetId);
+            break;
+          case 'completing':
+            getItems(targetId);
+            break;
+          case 'forthcoming':
+            getItems(targetId);
+            break;
+        }
+      });
+    }
+  }
+  
+  if (filterProfile !==null) {
+    filter();
+  }
+  
+
+  function getItems(className) {
+    filterblock.forEach(item =>{
+      if (item.classList.contains(className)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  const filterProfileL = document.querySelector('.profile_tab_filter_l'),
+        filterblockL = document.querySelectorAll('.filter_block_l'),
+        filterItemL = document.querySelectorAll('.filter_item_l');
+
+  if (filterProfileL !==null) {
+    function filterl() {
+      filterProfileL.addEventListener('click', e => {
+        const targetId = e.target.dataset.id;
+        const target = e.target;
+  
+        if (target.classList.contains('filter_item_l')) {
+          filterItemL.forEach(listI => listI.classList.remove('filter_active_l'));
+          target.classList.add('filter_active_l');
+        }
+  
+        switch(targetId) {
+          case 'all':
+            getItemsl('filter_block_l');
+            break;
+          case 'active':
+            getItemsl(targetId);
+            break;
+          case 'completing':
+            getItemsl(targetId);
+            break;
+          case 'forthcoming':
+            getItemsl(targetId);
+            break;
+        }
+      });
+    }
+  }
+  
+  if (filterProfileL !==null) {
+    filterl();
+  }
+  
+
+  function getItemsl(className) {
+    filterblockL.forEach(item =>{
+      if (item.classList.contains(className)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
   
 
 });

@@ -147,6 +147,42 @@
 	.page_asside {
 		margin-top: 40px;
 	}
+	.profile_asside {
+		width: 100%;
+	}
+	.profile_asside_ava {
+		display: flex;
+		flex-direction: row;
+	}
+	.profile_asside_ava img {
+		width: 180px;
+	}
+	.profile_asside_info {
+		margin-left: 20px;
+	}
+	.profile_asside_footer {
+		margin-top: 20px;
+	}
+	.profile_asside_footer_links {
+		flex-direction: row;
+		justify-content: space-around;
+		max-width: 700px;
+	}
+	.profile_asside_footer_links div {
+		justify-content: space-around;
+	}
+	.profile_asside {
+		margin-right: 0;
+	}
+	.profile_tab_set {
+		margin-top: 20px;
+	}
+	.profile_tab {
+		margin-top: 20px;
+	}
+	.profile_page, .settings_page {
+		margin-top: 20px;
+	}
 }
 @media (min-width: 665px) and (max-width: 1150px) {
 	.page_asside_ad.rat {
@@ -230,7 +266,47 @@
 		width: 100%;
 		justify-content: flex-end;
 	}
+	.page_main_tourney_info {
+		flex-wrap:wrap;
+		margin-top: 0;
+	}
+	.page_main_tourney_info div {
+		margin-top: 15px;
+	}
+	.archive {
+		flex-direction: column;
+	}
+	.reputation, .praises {
+		width: 100%;
+	}
+	.reputation, .praises {
+		margin-top: 25px;
+	}
+	.filter_item_info {
+		flex-wrap: wrap;
+	}
 }
+@media (max-width: 828px) {
+	.results_input .vs {
+		font-size: 55px;
+	}
+	.results_vs_users {
+		justify-content: space-around;
+	}
+	.results_vs_users .first_user_result, .results_vs_users .second_user_result {
+		flex-direction: column;
+		min-width: auto;
+	}
+	.results_vs_users .first_user_result_rat, .results_vs_users .second_user_result_rat {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 814px) {
+	.filter_item_info_status {
+		margin-top: 15px;
+	}
+}
+
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
 	.logo_name {
@@ -287,6 +363,84 @@
 	.modal_news__content_footer a, .dop_news {
 		margin-top: 15px;
 	}
+	.tabheader_game__items .results {
+		position: relative;
+		right: inherit;
+	}
+	.page_main_tourney .tabheader_game__items {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.page_main_tourney .tabheader_game__item {
+		padding: 5px 0;
+	}
+	.page_main_tourney .tabheader_game__item:first-child {
+		padding-top: 15px;
+	}
+	.page_main_tourney .tabheader_game__item:last-child {
+		padding-bottom: 15px;
+	}
+	.page_main_tourney .members .member {
+		width: 100%;
+	}
+	.profile_tab .tabheader__items {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px 15px;
+	}
+	.profile_tab .to-settings {
+		display: block;
+		width: 21px;
+		height: 20px;
+		top: 10px;
+	}
+	.profile_tab .tabheader__item {
+		padding: 5px 0;
+	}
+}
+@media (max-width : 720px){
+	.user_data form {
+		align-items: flex-end;
+	}
+}
+@media (max-width : 680px) {
+	.turnir_bloks_cs img, .turnir_bloks_dt img, .turnir_bloks_ff img {
+		width: 79px;
+	}
+	.tourney_item_head {
+		flex-direction: column;
+    	line-height: 24px;
+		padding: 0 40px 15px 90px;
+	}
+	.tourney_item_head:after {
+		top: 25px;
+	}
+	.tourney_item_main {
+		margin-left: 0;
+	}
+	.page_main_tourney .matches {
+		flex-wrap: wrap;
+	}
+	.page_main_tourney .matches .matches_result {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 10px;
+	}
+	.filter_item_head {
+		flex-direction: column;
+		line-height: 24px;
+		padding: 0 40px 15px 90px;
+	}
+	.filter_block img {
+		width: 79px;
+	}
+	.filter_item_head:after {
+		top: 25px;
+	}
+	.filter_item_main {
+		margin-left: 0;
+	}
 }
 @media (max-width : 665px) {
 	.page_asside {
@@ -310,6 +464,17 @@
 	
 	.modal_news__content img {
 		height: 240px;
+	}
+	.page_main_tourney_block {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.page_main_tourney_registration_block .regi_tourney {
+		margin-top: 15px;
+	}
+	.page_main_tourney_block:before {
+		top: 48px;
+		left: 200px;
 	}
 }
 /* xs <= Small (sm) */
@@ -354,6 +519,21 @@
 	}
 	.page_main_league_registration_block .regi_league {
 		margin-top: 15px;
+	}
+	.profile_asside_footer_links {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.profile_asside_footer_links div {
+		justify-content: space-between;
+		max-width: 320px;
+	}
+	.archive_item_info {
+		flex-direction: column-reverse;
+	}
+	.archive_item_info_date {
+		margin-right: 0;
+		margin-top: 10px;
 	}
 }
 @media (max-width : 576px) {
@@ -415,8 +595,106 @@
 	.league_item_btns {
 		justify-content: space-between;
 	}
+	
+	.tourney_item_info {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.tourney_item_info_check {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.results_vs_users {
+		justify-content: space-between;
+	}
+	.results_input .vs {
+		font-size: 45px;
+	}
+	.results_input_form {
+		margin-top: 15px;
+	}
 }
+@media (max-width : 561px) {
+	.filter_item_info_check {
+		margin-top: 15px;
+	}
+}
+@media (max-width : 550px) {
+	.profile_tab_set .tabheader__item_right {
+		position: relative;
+	}
+	.profile_tab_set .tabheader__items {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.profile_tab_set .tabheader__item {
+		padding: 15px 0 0 0 ;
+		font-size: 18px;
+	}
+	.profile_tab_set .tabheader__item_right {
+		padding: 20px 15px;
+	}
+	.profile_tab_set .tabheader__item_right a {
+		font-size: 17px;
+	}
+	.user_data form {
+		align-items:flex-start;
+	}
+	.name_label {
+		top: 15px;
+	}
+	.lastname_label {
+		top: 102px;
+	}
+	.nikname_label {
+		top: 192px;
+	}
+	.email_label {
+		top: 15px;
+	}
+	.social1 {
+		top: 15px;
+	}
+	.social2 {
+		top: 102px;
+	}
+	.social3 {
+		top: 192px;
+	}
+	.social4 {
+		top: 281px;
+	}
+	.social5 {
+		top: 369px;
+	}
+	.social6 {
+		top: 459px;
+	}
+	.social7 {
+		top: 548px;
+	}
+	.social8 {
+		top: 638px;
+	}
+	.tabcontent form input {
+		margin-top: 45px;
+	}
 
+	.archive_item_head {
+		flex-direction: column;
+		line-height: 24px;
+		padding: 0 40px 15px 90px;
+	}
+	.archive_block img {
+		width: 79px;
+	}
+	.archive_item_main {
+		margin-left: 0;
+	}
+	.archive_item_head:after {
+		top: 25px;
+	}
+}
 @media (max-width : 500px) {
 	.news_block_main_dop {
 		flex-direction: column;
@@ -424,6 +702,12 @@
 	}
 	.news_block_main_dop a {
 		margin-top: 15px;
+	}
+	.page_main_tourney_registration img {
+		height: 130px;
+	}
+	.user_about textarea {
+		width: 100%;
 	}
 }
 @media (max-width : 476px) {
@@ -502,10 +786,73 @@
 	.page_main_league_info .fond {
 		width: 100%;
 	}
+	.tourney_item_info_date {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.tourney_item_btns {
+		flex-direction: column;
+	}
+	.tourney_item_btns_reg {
+		width: 100%;
+	}
+	.tourney_item_btns_more {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.page_main_tourney .matches .matches_result {
+		flex-direction: column;
+		align-items: center;
+	}
+	.page_main_tourney .matches .matches_result span {
+		margin: 0;
+	}
+	.page_main_tourney .members .member {
+		padding: 15px 55px 15px 15px;
+	}
+	.page_main_tourney_registration_block div {
+		width: 100%;
+	}
+	.results_input .vs {
+		font-size: 35px;
+	}
+	.profile_asside_ava img {
+		width: 140px;
+	}
+	.reputation_block div:first-child, .praises_block div:first-child {
+		width: 50%;
+	}
+}
+@media (max-width : 428px) {
+	.filter_item_info_date {
+		margin-top: 15px;
+	}
+	.profile_tab_filter {
+		flex-direction: column;
+		align-items: flex-start; 
+	}
 }
 @media (max-width : 380px) {
 	.tourneys_tabcontent_filter_cs, .tourneys_tabcontent_filter_dt, .tourneys_tabcontent_filter_ff {
 		flex-direction: column;
+	}
+	.results_input .vs {
+		font-size: 20px;
+	}
+	.profile_asside_ava img {
+		width: 120px;
+	}
+	.user_data input , .user_data button {
+		width: 100%;
+	}
+	.user_about button {
+		width: 100%;
+	}
+	.reputation_block div:first-child, .praises_block div:first-child {
+		width: 70%;
+	}
+	.archive_vs {
+		width: 100%;
 	}
 }
 

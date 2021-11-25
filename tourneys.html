@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UNSTOP.GG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">    
+</head>
+<body>
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+	<div class="wrap">
+        <header>
+            <div class="container container_header">
+                <div class="logo">
+                    <div class="logo_img"></div>
+                    <div class="logo_name">UN<span>STOP</span>.GG</div>
+                </div>
+                <div class="menu">
+                    <div class="menu_open"><span>Меню</span></div>
+                    <div class="menu_mobile">
+                        <div class="logo">
+                            <div class="logo_img"></div>
+                            <div class="logo_name">UN<span>STOP</span>.GG</div>
+                        </div>
+                        <div class="menu_close"></div>
+                        <nav>
+                            <ul>
+                                <li><a class="main" href="index.html">Главная</a></li>
+                                <li><a class="news" href="news.html">Новости</a></li>
+                                <li><a class="turnir" href="#">Турниры</a></li>
+                                <li><a class="ligi" href="leagues.html">Лиги</a></li>
+                                <li><a class="rating" href="rating.html">Рейтинг</a></li>
+                                <li><a class="about" href="about.html">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>                    
+                    <div class="tools">                        
+                        <div class="lang">
+                            <ul class="lang_choice">
+                                <li class="lang_active">
+                                    <a href="#">
+                                        <img class="lang_openlist" src="images/ru-lang.png" alt="ru">
+                                    </a>                                
+                                    <ul class="lang_sublist">
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/en-lang.png" alt="en">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/es-lang.png" alt="en">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="theme_form">
+                                <input id="dark-mode" class="toggle" type="checkbox">
+                                <label for="dark-mode"></label>
+                            </form>
+                        </div>                       
+                        <div class="chat">
+                            <div class="chat_icon"></div>
+                            <div class="chat_masseges">
+                                У вас нет сообщений...
+                            </div>
+                        </div>
+                        <div class="notif">
+                            <div class="notif_icon"></div>
+                            <span class="notif_count">1</span>
+                            <div class="notif_masseges">
+                                <ul>
+                                    <li><a href="#">Начало турнира</a></li>
+                                    <li><a href="#">Новость 2</a></li>
+                                    <li><a href="#">Новость 3</a></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+                <div class="login user_active">
+                    <div data-modal class="login_icon"></div>
+                    <a href="userprofile.html" class="user_login">
+                        <span class="user_name">UnstopGod</span>
+                        <img src="images/avatar-mini.png" alt="avatar" clsaa="user_avatar">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="container container_page">
+            <div class="page">
+                <div class="page_main">
+                    <div class="page_main_tourneys">
+                        <div class="page_main_tourneys_h">
+                            <span class="page_main_tourneys_h_icon">Выбор игры</span>
+                        </div>
+                        <div class="page_main_tourneys_tab">
+                            <div class="tabcontainer_game">
+                                <div class="tabheader_game">
+                                    <div class="tabheader_game__items">
+                                        <div class="tabheader_game__item tab_cs tabheader_game__item_active">CS:GO</div>
+                                        <div class="tabheader_game__item tab_dota">DOTA2</div>
+                                        <div class="tabheader_game__item tab-fifa">FIFA20</div>
+                                    </div>
+                                </div>
+                                <div class="tabcontent_game tabshow_game">                                    
+                                    <div class="tourneys_tabcontent_h_with_filter">
+                                        <div class="tourneys_tabcontent_h">
+                                            Все турниры
+                                        </div>
+                                        <div class="tourneys_tabcontent_filter_cs">
+                                            <div class="turnir_item_cs turnir_active_cs"data-id="active">Активные</div>
+                                            <div class="turnir_item_cs"data-id="completing">Завершенные</div>
+                                            <div class="turnir_item_cs"data-id="forthcoming">Предстоящие</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="tourneys_tabcontent_bloks">
+                                        <div class="turnir_bloks_cs active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_cs active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_cs completing">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_cs completing">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_cs completing">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_cs forthcoming">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_cs forthcoming">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                               
+                                </div>
+                                <div class="tabcontent_game">
+                                    <div class="tourneys_tabcontent_h_with_filter">
+                                        <div class="tourneys_tabcontent_h">
+                                            Все турниры
+                                        </div>
+                                        <div class="tourneys_tabcontent_filter_dt">
+                                            <div class="turnir_item_dt turnir_active_dt"data-id="active">Активные</div>
+                                            <div class="turnir_item_dt"data-id="completing">Завершенные</div>
+                                            <div class="turnir_item_dt"data-id="forthcoming">Предстоящие</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="tourneys_tabcontent_bloks">
+                                        <div class="turnir_bloks_dt active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_dt active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_dt active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_dt completing">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_dt completing">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_dt forthcoming">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="tabcontent_game">
+                                    <div class="tourneys_tabcontent_h_with_filter">
+                                        <div class="tourneys_tabcontent_h">
+                                            Все турниры
+                                        </div>
+                                        <div class="tourneys_tabcontent_filter_ff">
+                                            <div class="turnir_item_ff turnir_active_ff"data-id="active">Активные</div>
+                                            <div class="turnir_item_ff"data-id="completing">Завершенные</div>
+                                            <div class="turnir_item_ff"data-id="forthcoming">Предстоящие</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="tourneys_tabcontent_bloks">
+                                        <div class="turnir_bloks_ff active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_ff active">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_ff completing">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="turnir_bloks_ff forthcoming">
+                                            <img src="images/img-cs-2.png" alt="logo">
+                                            <div class="tourney_item_head">
+                                                <span>DreamHack Masters Spring 2021</span>
+                                                <span>$ 250 000</span>
+                                            </div>
+                                            <div class="tourney_item_main">
+                                                <div class="tourney_item_info">
+                                                    <div class="tourney_item_info_playres">
+                                                        Игроки: 
+                                                        <span class="font_reg">4</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_date">
+                                                        Даты: 
+                                                        <span class="font_reg">14.02.2021</span>
+                                                         - 
+                                                        <span class="font_reg">15.02.2021</span>
+                                                    </div>
+                                                    <div class="tourney_item_info_check">
+                                                        Чекин: 
+                                                        <span class="font_reg">Closed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="tourney_item_btns">
+                                                    <form action="#">
+                                                        <button class="tourney_item_btns_reg">Регистрация</button>
+                                                    </form>
+                                                    <a href="tourney.html" class="tourney_item_btns_more">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="page_asside">
+                    <div class="page_asside_raiting">
+                        <div class="page_asside_raiting_h">
+                            Рейтинг игроков
+                        </div>
+                        <div class="tabcontainer_raiting">
+                            <div class="tabheader_raiting">
+                                <div class="tabheader_raiting__items">
+                                    <div class="tabheader_raiting__item tabheader_raiting__item_active">CS:GO</div>
+                                    <div class="tabheader_raiting__item">DOTA2</div>
+                                    <div class="tabheader_raiting__item">FIFA20</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent_raiting tabshow_raiting">
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>S1mple</span>
+                                    </div>
+                                    <div>3879</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="bg_a_raiting">
+                                    <a href="rating.html">Смотреть топ-100 игроков</a>
+                                </div>
+                            </div>
+                            <div class="tabcontent_raiting">
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>ZywOo</span>
+                                    </div>
+                                    <div>4586</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>ZywOo</span>
+                                    </div>
+                                    <div>4586</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>ZywOo</span>
+                                    </div>
+                                    <div>4586</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>ZywOo</span>
+                                    </div>
+                                    <div>4586</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>ZywOo</span>
+                                    </div>
+                                    <div>4586</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>ZywOo</span>
+                                    </div>
+                                    <div>4586</div>
+                                    <span class="raiting_place">1</span>
+                                </div>                                
+                                <div class="bg_a_raiting">
+                                    <a href="rating.html">Смотреть топ-100 игроков</a>
+                                </div>
+                            </div>
+                            <div class="tabcontent_raiting">
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="raiting_item">
+                                    <div class="raiting_user">
+                                        <img src="images/avatar-mini.png" alt="avatar">
+                                        <span>Dev1ce</span>
+                                    </div>
+                                    <div>3590</div>
+                                    <span class="raiting_place">1</span>
+                                </div>
+                                <div class="bg_a_raiting">
+                                    <a href="rating.html">Смотреть топ-100 игроков</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_asside_ad">
+                        <div>
+                            <a href="#" class="page_asside_ad_block ad"></a>
+                        </div>
+                        <div>
+                            <a href="#" class="page_asside_ad_block"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_main">
+                <div class="logo">
+                    <div class="logo_img"></div>
+                    <div class="logo_name">UN<span>STOP</span>.GG</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="main" href="index.html">Главная</a></li>
+                        <li><a class="news" href="news.html">Новости</a></li>
+                        <li><a class="turnir" href="#">Турниры</a></li>
+                        <li><a class="ligi" href="leagues.html">Лиги</a></li>
+                        <li><a class="rating" href="rating.html">Рейтинг</a></li>
+                        <li><a class="about" href="about.html">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://vk.com" class="social_vk" target="_blank"></a>
+                    <a href="https://www.facebook.com" class="social_fb" target="_blank"></a>
+                </div>
+            </div>
+            <div class="footer_info">
+                <a class="pol" href="#">Политика конфиденциальности</a>
+                <a class="use" href="#">Пользовательское соглашение</a>
+                <span>© unstop.gg 2020 All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div data-close class="modal__close">&times;</div>
+                <div class="tabcontainer">
+                    <div class="tabheader">
+                        <div class="tabheader__items">
+                            <div class="tabheader__item tabheader__item_active">Вход</div>
+                            <div class="tabheader__item">Регистрация</div>
+                        </div>
+                    </div>
+                    <div class="tabcontent tabshow">
+                        <form action="#">                                            
+                            <input required placeholder="Никнейм" name="name" type="text">
+                            <input required placeholder="Пароль" name="password" type="password">
+                            <button class="purple-button">Войти</button>
+                        </form>
+                    </div>
+                    <div class="tabcontent">
+                        <form action="#">
+                            <input required placeholder="Имя" name="name" type="text">
+                            <input required placeholder="Никнейм" name="name" type="text">
+                            <input required placeholder="Пароль" name="password" type="password">
+                            <input required placeholder="Подтвердите пароль" name="password" type="password">
+                            <button class="purple-button">Зарегистрироватся</button>
+                        </form>
+                    </div>                                    
+                </div>                                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_news">
+        <div class="modal_news__dialog">
+            <div class="modal_news__content">
+                <div data-close-news class="modal_news__close">&times;</div>
+                <img src="images/img-onenews.png" alt="">
+                <div class="modal_news__content_main">
+                    <span>Обновления карты Ancient:</span>
+                    <ul>
+                        <li>Уменьшен наклонный камень возле центрального коннектора рядом с точкой А.</li>
+                        <li>Возле точки А убраны лишние листья и ветки кустов, чтобы улучшить видимость углов.</li>
+                        <li>Снижена громкость звуков птиц.</li>
+                        <li>Возле базы террористов добавили невидимые пиксели под воду, чтобы скинутое оружие не падало под текстуры.</li>
+                        <li>Убраны пиксельные зазоры возле строительных лесов рядом с точкой В.</li>
+                        <li>Убраны пиксельные зазоры в дверном проеме на пути от базы спецназа к точке А.</li>
+                        <li>Улучшен отскок гранат от крыш.</li>
+                        <li>Проведена общая оптимизация карты.</li>
+                    </ul>
+                    <p>
+                        Текущие соревнования серии RMR будут доиграны без этих нововведений, но компания ESL уже объявила, что Ancient будет заявлена в маппул на Intel Extreme Masters Season XVI — Summer, который начнется в июне.
+                    </p>
+                </div> 
+                <div class="modal_news__content_footer">
+                    <span class="author_news">AUTHOR</span>
+                    <div class="dop_news">
+                        <span class="dop_news_likes">61</span>
+                        <span class="dop_news_coment">174</span>
+                        <span class="dop_news_share">4</span>
+                    </div>
+                    <a href="#" >На форум</a>
+                </div>                  
+            </div>
+        </div>
+    </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
