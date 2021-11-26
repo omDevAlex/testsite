@@ -9,6 +9,7 @@ body {
     --input-border: 1px solid #B6B6B6; 
     --rait_shadow: 235, 235, 235;
     --smoll-blok-bg: linear-gradient(180deg, #F1F1F1 0%, rgba(241, 241, 241, 0) 100%);
+    --network_color: #FFFFFF;
     /* #ebebeb */
 
 
@@ -65,7 +66,8 @@ body.dark {
     --line-color: #2D2A3C;
     --input-border: 1px solid rgba(255, 255, 255, 0.25);
     --rait_shadow: 28, 26, 37;
-    --smoll-blok-bg: linear-gradient(180deg, #2D2A3C 0%, rgba(45, 42, 60, 0) 100%);;
+    --smoll-blok-bg: linear-gradient(180deg, #2D2A3C 0%, rgba(45, 42, 60, 0) 100%);
+    --network_color: #3B3947;
 
     --logo-img: url(../images/icon-logo-dark.svg);
     --main-menu-icon: url(../images/icon-main-dark.png);
@@ -2632,4 +2634,137 @@ footer .social {
     display: flex;
     justify-content: space-between;
     width: 275px;
+}
+.tourney_network {
+    display: flex;
+    overflow: auto;
+    background: var(--smoll-blok-bg);
+    padding: 25px 15px;
+}
+.oneeighth_final, .quarterfinals, .semifinal, .final {
+    width: 220px;
+    position: relative;
+    height: 100%;
+    padding-top: 40px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.final {
+    width: 180px;
+}
+.tourney_network_h {
+    position: absolute;
+    line-height: 16px;
+    top: 0;
+    left: 30px
+}
+.win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #42FF82;
+    border-left: 1px solid #C4C4C4;
+    min-height: 40px;
+    min-width: 40px;
+}
+.losing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF0F07;
+    border-left: 1px solid #C4C4C4;
+    min-height: 40px;
+    min-width: 40px;
+}
+.name_command {
+    padding: 10px;
+}
+.tourney_network_match_first, .tourney_network_match_second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 16px;
+    border: 1px solid #C4C4C4;
+    min-height: 40px;
+}
+.tourney_network_match_first {
+    border-bottom: none;
+}
+.tourney_network_match {
+    background: var(--network_color);
+    width: 180px;
+}
+.network_block {
+    position: relative;
+    width: 180px;
+}
+.pointer_right {
+    position: absolute;
+    right: -20px;
+    top: 41px;
+    width: 21px;
+    border-top: 1px solid #C4C4C4;    
+}
+.pointer_left {
+    position: absolute;
+    left: -19px;
+    top: 41px;
+    width: 20px;
+    border-top: 1px solid #C4C4C4;
+}
+.pointer_down8:after {
+    content: '';
+    position: absolute;
+    top: 41px;
+    right: -21px;
+    width: 1px;
+    height: 54px;
+    background: #C4C4C4;
+}
+.pointer_up8:after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    right: -21px;
+    width: 1px;
+    height: 54px;
+    background: #C4C4C4;
+}
+.pointer_down4:after {
+    content: '';
+    position: absolute;
+    top: 41px;
+    right: -21px;
+    width: 1px;
+    height: 108px;
+    background: #C4C4C4;
+}
+.pointer_up4:after {
+    content: '';
+    position: absolute;
+    top: -66px;
+    right: -21px;
+    width: 1px;
+    height: 108px;
+    background: #C4C4C4;
+}
+.pointer_down2:after {
+    content: '';
+    position: absolute;
+    top: 41px;
+    right: -21px;
+    width: 1px;
+    height: 216px;
+    background: #C4C4C4;
+}
+.pointer_up2:after {
+    content: '';
+    position: absolute;
+    top: -174px;
+    right: -21px;
+    width: 1px;
+    height: 216px;
+    background: #C4C4C4;
 }
