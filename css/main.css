@@ -10,7 +10,6 @@ body {
     --rait_shadow: 235, 235, 235;
     --smoll-blok-bg: linear-gradient(180deg, #F1F1F1 0%, rgba(241, 241, 241, 0) 100%);
     --network_color: #FFFFFF;
-    /* #ebebeb */
 
 
 
@@ -1371,8 +1370,6 @@ footer .social {
 .video_section {
     height: 494px;
 }
-
-
 .page_main_rat_game_h_icon {
     font-size: 19px;
     position: relative;
@@ -1682,9 +1679,6 @@ footer .social {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
 .page_main_leagues_h {
     margin-bottom: 10px;
 }
