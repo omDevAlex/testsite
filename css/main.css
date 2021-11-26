@@ -2636,8 +2636,7 @@ footer .social {
     padding: 25px 15px;
 }
 .oneeighth_final, .quarterfinals, .semifinal, .final {
-    width: 220px;
-    min-width: 220px;
+    width: 220px;    
     position: relative;
     height: 100%;
     padding-top: 40px;
@@ -2645,6 +2644,7 @@ footer .social {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    min-width: 220px;
 }
 .final {
     width: 180px;
