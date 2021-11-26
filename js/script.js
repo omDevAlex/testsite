@@ -228,22 +228,19 @@ window.addEventListener('DOMContentLoaded', () => {
             break;
         }
       });
-    }
-  }
+    }  
   
-  if (filterList !==null) {
-    filter();
-  }
-  
+    filter();  
 
-  function getItems(className) {
-    filterItems.forEach(item =>{
-      if (item.classList.contains(className)) {
-        item.style.display = 'flex';
-      } else {
-        item.style.display = 'none';
-      }
-    });
+    function getItems(className) {
+      filterItems.forEach(item =>{
+        if (item.classList.contains(className)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
   }
 
   // tourneys filter
@@ -265,22 +262,23 @@ window.addEventListener('DOMContentLoaded', () => {
   
         switch(targetId) {
           case 'active':
-            getItems(targetId);
+            getItemst(targetId);
             break;
           case 'completing':
-            getItems(targetId);
+            getItemst(targetId);
             break;
           case 'forthcoming':
-            getItems(targetId);
+            getItemst(targetId);
             break;
         }
       });
     }
-  
+      
     filter();
+    
   
 
-    function getItems(className) {
+    function getItemst(className) {
       filterBloksTurnirCs.forEach(item =>{
         if (item.classList.contains(className)) {
           item.style.display = 'flex';
@@ -308,13 +306,13 @@ window.addEventListener('DOMContentLoaded', () => {
   
         switch(targetId) {
           case 'active':
-            getItems(targetId);
+            getItemst(targetId);
             break;
           case 'completing':
-            getItems(targetId);
+            getItemst(targetId);
             break;
           case 'forthcoming':
-            getItems(targetId);
+            getItemst(targetId);
             break;
         }
       });
@@ -323,7 +321,7 @@ window.addEventListener('DOMContentLoaded', () => {
     filter();
   
 
-    function getItems(className) {
+    function getItemst(className) {
       filterBloksTurnirDt.forEach(item =>{
         if (item.classList.contains(className)) {
           item.style.display = 'flex';
@@ -351,13 +349,13 @@ window.addEventListener('DOMContentLoaded', () => {
   
         switch(targetId) {
           case 'active':
-            getItems(targetId);
+            getItemst(targetId);
             break;
           case 'completing':
-            getItems(targetId);
+            getItemst(targetId);
             break;
           case 'forthcoming':
-            getItems(targetId);
+            getItemst(targetId);
             break;
         }
       });
@@ -366,7 +364,7 @@ window.addEventListener('DOMContentLoaded', () => {
     filter();
   
 
-    function getItems(className) {
+    function getItemst(className) {
       filterBloksTurnirFf.forEach(item =>{
         if (item.classList.contains(className)) {
           item.style.display = 'flex';

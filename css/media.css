@@ -397,6 +397,9 @@
 	.profile_tab .tabheader__item {
 		padding: 5px 0;
 	}
+	.logo:after {
+		top: -7px;
+	}
 }
 @media (max-width : 720px){
 	.user_data form {
@@ -432,7 +435,7 @@
 		line-height: 24px;
 		padding: 0 40px 15px 90px;
 	}
-	.filter_block img {
+	.filter_block img, .filter_block_l img {
 		width: 79px;
 	}
 	.filter_item_head:after {
@@ -611,6 +614,15 @@
 		font-size: 45px;
 	}
 	.results_input_form {
+		margin-top: 15px;
+	}
+	.profile_tab_about {
+		flex-direction: column;
+	}
+	.profile_tab_about_block, .profile_tab_about_block {
+		width: 100%;
+	}
+	.profile_tab_about_block {
 		margin-top: 15px;
 	}
 }
@@ -827,14 +839,23 @@
 	.filter_item_info_date {
 		margin-top: 15px;
 	}
-	.profile_tab_filter {
+	.profile_tab_filter, .profile_tab_filter_l {
 		flex-direction: column;
 		align-items: flex-start; 
+		font-size: 18px;
+	}
+	.filter_item, .filter_item_l {
+		padding: 5px 0;
 	}
 }
 @media (max-width : 380px) {
 	.tourneys_tabcontent_filter_cs, .tourneys_tabcontent_filter_dt, .tourneys_tabcontent_filter_ff {
 		flex-direction: column;
+		align-items: flex-start;
+		font-size: 18px;
+	}
+	.turnir_item_cs, .turnir_item_dt, .turnir_item_ff {
+		padding: 5px 0;
 	}
 	.results_input .vs {
 		font-size: 20px;
